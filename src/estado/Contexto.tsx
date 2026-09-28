@@ -7,6 +7,10 @@ import { hojeISO, somarDias } from '../nucleo/datas'
 import { montarItens, type Item } from '../nucleo/itens'
 import type { Data, Disciplina, Evento, Leitura, Nivel, Plano, Progresso } from '../nucleo/tipos'
 import { carregar, estadoInicial, limpar, salvar } from './armazenamento'
+import {
+  LIMITE_ARQUIVO, fmtTamanho, importarAnexos, limparAnexos, listarAnexos, novoIdAnexo, obterArquivo, removerAnexoDoBanco, salvarAnexo,
+  type AnexoBackup, type AnexoMeta,
+} from './anexos'
 
 const plano = planoJson as unknown as Plano
 
@@ -45,7 +49,13 @@ interface Ctx {
   removerLeituraNova: (id: string) => void
   alternarPrioridade: (l: Leitura) => void
   atualizarTrabalho: (fn: (t: Progresso['trabalho']) => Progresso['trabalho'], aviso?: string) => void
-  restaurar: (p: Progresso) => void
+  definirNota: (chave: string, texto: string) => void
+  anexos: Record<string, AnexoMeta[]>
+  todosAnexos: AnexoMeta[]
+  anexar: (chave: string, arquivos: File[]) => Promise<string | undefined>
+  removerAnexo: (id: string) => Promise<void>
+  abrirAnexo: (id: string) => Promise<void>
+  restaurar: (p: Progresso, anexos?: AnexoBackup[]) => Promise<void>
   resetar: () => void
   marcarBackup: () => void
 }
@@ -65,8 +75,17 @@ export function EstudosProvider({ children }: { children: ReactNode }) {
   const [prog, setProg] = useState<Progresso>(carregar)
   const [avisos, setAvisos] = useState<Aviso[]>([])
   const progRef = useRef(prog)
+  const todosAnexosRef = useRef<AnexoMeta[]>([])
   progRef.current = prog
   const [hoje, setHoje] = useState(hojeISO)
+  const [todosAnexos, setTodosAnexos] = useState<AnexoMeta[]>([])
+  todosAnexosRef.current = todosAnexos
+  useEffect(() => { listarAnexos().then(setTodosAnexos).catch(() => setTodosAnexos([])) }, [])
+  const anexos = useMemo(() => {
+    const m: Record<string, AnexoMeta[]> = {}
+    for (const a of todosAnexos) (m[a.chave] ??= []).push(a)
+    return m
+  }, [todosAnexos])
 
   useEffect(() => salvar(prog), [prog])
   // Se o app ficar aberto de um dia para o outro, atualiza o "hoje".
@@ -222,14 +241,62 @@ export function EstudosProvider({ children }: { children: ReactNode }) {
       atualizarTrabalho: (fn: (t: Progresso['trabalho']) => Progresso['trabalho'], aviso?: string) => {
         mudar((p) => ({ ...p, trabalho: fn(p.trabalho) }), aviso)
       },
-      restaurar: (p: Progresso) => setProg(p),
-      resetar: () => { limpar(); setProg(estadoInicial()) },
+      definirNota: (chave: string, texto: string) => {
+        mudar((p) => {
+          const n = { ...p.notas }
+          if (texto.trim()) n[chave] = texto; else delete n[chave]
+          return { ...p, notas: n }
+        })
+      },
+      anexar: async (chave: string, arquivos: File[]) => {
+        const grandes = arquivos.filter((f) => f.size > LIMITE_ARQUIVO)
+        const ok = arquivos.filter((f) => f.size <= LIMITE_ARQUIVO)
+        try {
+          const novos: AnexoMeta[] = []
+          for (const f of ok) {
+            const meta: AnexoMeta = { id: novoIdAnexo(), chave, nome: f.name, tipo: f.type || 'application/octet-stream', tamanho: f.size, criadoEm: new Date().toISOString() }
+            await salvarAnexo(meta, f)
+            novos.push(meta)
+          }
+          setTodosAnexos((a) => [...a, ...novos])
+          // pede ao navegador para não apagar os anexos sozinho (não é garantido no iPhone)
+          navigator.storage?.persist?.().catch(() => undefined)
+        } catch {
+          return 'Não consegui salvar o arquivo. O aparelho pode estar sem espaço ou bloqueando o armazenamento.'
+        }
+        if (grandes.length) return `${grandes.map((f) => f.name).join(', ')}: passa de ${fmtTamanho(LIMITE_ARQUIVO)} e não foi anexado.`
+        return undefined
+      },
+      removerAnexo: async (id: string) => {
+        await removerAnexoDoBanco(id)
+        setTodosAnexos((a) => a.filter((x) => x.id !== id))
+      },
+      abrirAnexo: async (id: string) => {
+        const blob = await obterArquivo(id)
+        const meta = todosAnexosRef.current.find((a) => a.id === id)
+        if (!blob) return
+        const url = URL.createObjectURL(blob)
+        const w = window.open(url, '_blank', 'noopener')
+        if (!w) { // pop-up bloqueado: baixa o arquivo
+          const a = document.createElement('a')
+          a.href = url; a.download = meta?.nome ?? 'anexo'; a.click()
+        }
+        setTimeout(() => URL.revokeObjectURL(url), 120_000)
+      },
+      restaurar: async (p: Progresso, anexosBackup?: AnexoBackup[]) => {
+        setProg(p)
+        if (anexosBackup) {
+          await importarAnexos(anexosBackup)
+          setTodosAnexos(await listarAnexos())
+        }
+      },
+      resetar: () => { limpar(); setProg(estadoInicial()); limparAnexos().then(() => setTodosAnexos([])).catch(() => undefined) },
       marcarBackup: () => mudar((p) => ({ ...p, ultimoBackup: new Date().toISOString() })),
     }
   }, [mudar, itens])
 
   const valor: Ctx = {
-    plano, prog, cal, hoje, semanaAtual, numeroSemanaAtual, itens, eventos, leituras, disciplina, avisos, fecharAviso, ...acoes,
+    plano, prog, cal, hoje, semanaAtual, numeroSemanaAtual, itens, eventos, leituras, disciplina, avisos, fecharAviso, anexos, todosAnexos, ...acoes,
   }
   return <Contexto.Provider value={valor}>{children}</Contexto.Provider>
 }

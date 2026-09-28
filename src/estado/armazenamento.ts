@@ -1,5 +1,6 @@
 // Salvar e carregar o progresso no localStorage do navegador.
 import type { Progresso } from '../nucleo/tipos'
+import type { AnexoBackup } from './anexos'
 
 const CHAVE = 'estudos-unb:progresso'
 export const VERSAO = 1
@@ -10,7 +11,7 @@ export function estadoInicial(): Progresso {
     tarefasFeitas: {}, leiturasFeitas: {}, eventosFeitos: {},
     extras: [], metasEditadas: {}, titulosEditados: {}, removidas: {}, realocacoes: {},
     extensoes: {}, historicoExtensoes: [], dominio: {},
-    prazosNovos: [], leiturasNovas: [], prioritarias: {},
+    prazosNovos: [], leiturasNovas: [], prioritarias: {}, notas: {},
     trabalho: { tarefas: [], notas: '' },
   }
 }
@@ -49,14 +50,14 @@ export function limpar(): void {
 }
 
 // ------------------------------------------------------------------ backup
-export interface ArquivoBackup { app: 'estudos-unb'; versao: number; geradoEm: string; progresso: Progresso }
+export interface ArquivoBackup { app: 'estudos-unb'; versao: number; geradoEm: string; progresso: Progresso; anexos?: AnexoBackup[] }
 
-export function criarBackup(p: Progresso): ArquivoBackup {
-  return { app: 'estudos-unb', versao: VERSAO, geradoEm: new Date().toISOString(), progresso: p }
+export function criarBackup(p: Progresso, anexos?: AnexoBackup[]): ArquivoBackup {
+  return { app: 'estudos-unb', versao: VERSAO, geradoEm: new Date().toISOString(), progresso: p, ...(anexos ? { anexos } : {}) }
 }
 
 /** Valida o arquivo escolhido. Devolve o progresso ou uma mensagem de erro em português. */
-export function validarBackup(texto: string): { ok: true; progresso: Progresso; geradoEm: string } | { ok: false; erro: string } {
+export function validarBackup(texto: string): { ok: true; progresso: Progresso; geradoEm: string; anexos?: AnexoBackup[] } | { ok: false; erro: string } {
   let dados: unknown
   try { dados = JSON.parse(texto) } catch { return { ok: false, erro: 'Esse arquivo não é um backup válido (não consegui ler).' } }
   const b = dados as Partial<ArquivoBackup>
@@ -66,5 +67,6 @@ export function validarBackup(texto: string): { ok: true; progresso: Progresso; 
   if (typeof b.versao !== 'number' || b.versao > VERSAO) {
     return { ok: false, erro: 'Esse backup é de uma versão mais nova do app. Atualize o app e tente de novo.' }
   }
-  return { ok: true, progresso: mesclar(b.progresso), geradoEm: b.geradoEm ?? '' }
+  const anexos = Array.isArray(b.anexos) ? b.anexos.filter((a) => a?.meta?.id && typeof a.dados === 'string' && a.dados.startsWith('data:')) : undefined
+  return { ok: true, progresso: mesclar(b.progresso), geradoEm: b.geradoEm ?? '', anexos }
 }

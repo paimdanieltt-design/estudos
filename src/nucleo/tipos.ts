@@ -132,6 +132,7 @@ export interface Progresso {
   prazosNovos: Evento[]
   leiturasNovas: Leitura[]
   prioritarias: Record<string, boolean>
+  notas: Record<string, string> // comentários e links de cada tarefa/leitura ('t:ID', 'x:ID', 'l:ID')
   trabalho: { tarefas: TarefaTrabalho[]; notas: string }
   ultimoBackup?: string
 }

@@ -2,23 +2,30 @@ import { useRef, useState } from 'react'
 import { Botao, Cartao, Confirmar, Titulo } from '../componentes/basicos'
 import { useEstudos } from '../estado/Contexto'
 import { criarBackup, validarBackup } from '../estado/armazenamento'
+import { exportarAnexos, fmtTamanho, type AnexoBackup } from '../estado/anexos'
 import { fimDoPlano, totalExtensao } from '../nucleo/calendario'
 import { fmtDiaMes } from '../nucleo/datas'
 import type { Progresso } from '../nucleo/tipos'
 
 export function Configuracoes() {
-  const { plano, prog, hoje, restaurar, resetar, marcarBackup, desfazerExtensao } = useEstudos()
+  const { plano, prog, hoje, restaurar, resetar, marcarBackup, desfazerExtensao, todosAnexos } = useEstudos()
   const entrada = useRef<HTMLInputElement>(null)
-  const [pendente, setPendente] = useState<{ progresso: Progresso; geradoEm: string } | null>(null)
+  const [pendente, setPendente] = useState<{ progresso: Progresso; geradoEm: string; anexos?: AnexoBackup[] } | null>(null)
+  const [comAnexos, setComAnexos] = useState(true)
   const [erro, setErro] = useState('')
   const [resetando, setResetando] = useState(false)
   const [msg, setMsg] = useState('')
 
   const nomeArquivo = () => `backup-estudos-${hoje}.json`
-  const gerarArquivo = () => new File([JSON.stringify(criarBackup(prog), null, 2)], nomeArquivo(), { type: 'application/json' })
+  const tamanhoAnexos = todosAnexos.reduce((s, a) => s + a.tamanho, 0)
+  const gerarArquivo = async () => {
+    const anexos = comAnexos && todosAnexos.length ? await exportarAnexos(todosAnexos) : undefined
+    return new File([JSON.stringify(criarBackup(prog, anexos))], nomeArquivo(), { type: 'application/json' })
+  }
 
-  const baixar = () => {
-    const arq = gerarArquivo()
+  const baixar = async () => {
+    setMsg('Preparando o backup…')
+    const arq = await gerarArquivo()
     const url = URL.createObjectURL(arq)
     const a = document.createElement('a')
     a.href = url; a.download = arq.name; a.click()
@@ -27,7 +34,7 @@ export function Configuracoes() {
   }
 
   const compartilhar = async () => {
-    const arq = gerarArquivo()
+    const arq = await gerarArquivo()
     if (navigator.canShare?.({ files: [arq] })) {
       try { await navigator.share({ files: [arq], title: 'Backup Estudos UnB' }); marcarBackup(); setMsg('Backup compartilhado.') } catch { /* cancelado */ }
     } else {
@@ -42,7 +49,7 @@ export function Configuracoes() {
     if (entrada.current) entrada.current.value = '' // permite escolher o mesmo arquivo de novo
     const r = validarBackup(texto)
     if (!r.ok) { setErro(r.erro); return }
-    setPendente({ progresso: r.progresso, geradoEm: r.geradoEm })
+    setPendente({ progresso: r.progresso, geradoEm: r.geradoEm, anexos: r.anexos })
   }
 
   const ext = totalExtensao(prog.extensoes)
@@ -56,6 +63,12 @@ export function Configuracoes() {
           <Titulo>Backup do progresso</Titulo>
           <p className="text-sm text-tinta-2">Seu progresso fica só neste aparelho. Guarde um backup de vez em quando — ele também serve para levar tudo para outro celular ou computador.</p>
           <p className="mt-2 text-xs text-tinta-3">{prog.ultimoBackup ? `Último backup: ${new Date(prog.ultimoBackup).toLocaleString('pt-BR')}` : 'Você ainda não fez nenhum backup.'}</p>
+          {todosAnexos.length > 0 && (
+            <label className="mt-3 flex items-start gap-2 text-sm">
+              <input type="checkbox" className="mt-1 h-4 w-4" checked={comAnexos} onChange={(e) => setComAnexos(e.target.checked)} />
+              <span>Incluir os {todosAnexos.length} anexo{todosAnexos.length > 1 ? 's' : ''} ({fmtTamanho(tamanhoAnexos)}). O arquivo de backup fica maior{tamanhoAnexos > 30 * 1024 * 1024 ? ' e pode demorar ou falhar no celular' : ''}.</span>
+            </label>
+          )}
           <div className="mt-3 flex flex-wrap gap-2">
             <Botao variante="principal" onClick={baixar}>⬇️ Baixar backup</Botao>
             <Botao onClick={compartilhar}>📤 Enviar (WhatsApp, e-mail, Drive)</Botao>
@@ -100,12 +113,13 @@ export function Configuracoes() {
 
       <Confirmar
         aberto={!!pendente} titulo="Restaurar este backup?" botao="Restaurar e substituir"
-        texto={<><p>O progresso atual deste aparelho será <strong>substituído</strong> pelo do arquivo{pendente?.geradoEm && <> (gerado em {new Date(pendente.geradoEm).toLocaleString('pt-BR')})</>}.</p><p className="mt-2">Se quiser garantir, cancele e baixe um backup do estado atual antes.</p></>}
-        onCancelar={() => setPendente(null)} onConfirmar={() => { if (pendente) restaurar(pendente.progresso); setPendente(null); setMsg('Backup restaurado.') }}
+        texto={<><p>O progresso atual deste aparelho será <strong>substituído</strong> pelo do arquivo{pendente?.geradoEm && <> (gerado em {new Date(pendente.geradoEm).toLocaleString('pt-BR')})</>}.</p>
+          {pendente?.anexos ? <p className="mt-2">O backup tem <strong>{pendente.anexos.length} anexo(s)</strong>: os anexos atuais deste aparelho também serão substituídos.</p> : <p className="mt-2">Este backup não tem anexos; os anexos atuais deste aparelho ficam como estão.</p>}<p className="mt-2">Se quiser garantir, cancele e baixe um backup do estado atual antes.</p></>}
+        onCancelar={() => setPendente(null)} onConfirmar={async () => { if (pendente) await restaurar(pendente.progresso, pendente.anexos); setPendente(null); setMsg('Backup restaurado.') }}
       />
       <Confirmar
         aberto={resetando} titulo="Resetar tudo?" botao="Sim, apagar tudo"
-        texto={<p>Isso apaga todas as marcações, tarefas extras, anotações, prazos e leituras que você adicionou e os ajustes de semanas. <strong>Não dá para desfazer.</strong> Faça um backup antes, se quiser.</p>}
+        texto={<p>Isso apaga todas as marcações, tarefas extras, anotações, <strong>anexos</strong>, prazos e leituras que você adicionou e os ajustes de semanas. <strong>Não dá para desfazer.</strong> Faça um backup antes, se quiser.</p>}
         onCancelar={() => setResetando(false)} onConfirmar={() => { resetar(); setResetando(false); setMsg('Tudo foi resetado.') }}
       />
     </div>

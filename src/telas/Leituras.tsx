@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Notas } from '../componentes/Notas'
 import { Barra, Botao, Campo, Cartao, Checkbox, Janela, Tag, Titulo, estiloCampo } from '../componentes/basicos'
 import { useEstudos } from '../estado/Contexto'
 import { fmtCurto, fmtMinutos } from '../nucleo/datas'
@@ -33,6 +34,7 @@ export function Leituras() {
             <span>{fmtMinutos(l.minutos)}</span>
             {feita(l) && <button className="font-medium text-destaque hover:underline" onClick={() => alternarLeitura(l.id)}>↺ Desmarcar</button>}
           </div>
+          <Notas chave={`l:${l.id}`} />
         </div>
         <div className="flex shrink-0 items-start gap-1">
           <button className="rounded-lg px-2 py-1 hover:bg-stone-100" onClick={() => alternarPrioridade(l)} aria-label={prio(l) ? 'Tirar prioridade' : 'Marcar como prioritária'} title="Prioritária">{prio(l) ? '⭐' : '☆'}</button>

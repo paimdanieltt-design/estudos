@@ -40,6 +40,11 @@ Outros comandos úteis:
 
 Dentro do app você consegue, sem mexer em código: marcar e desmarcar tudo, adicionar tarefas extras em qualquer dia, editar o texto das metas e das tarefas, realocar itens, estender uma semana, adicionar **prazos** e **leituras** novos, anotar coisas do trabalho e fazer backup.
 
+### Notas e anexos
+Cada tarefa e cada leitura tem uma caixa retrátil **📝 Notas e anexos**: escreva comentários, cole links (viram clicáveis) e anexe arquivos (até 15 MB cada).
+- As **notas** fazem parte do progresso e entram no backup normalmente.
+- Os **anexos** ficam guardados só no navegador deste aparelho. Para levá-los para outro aparelho, marque **“Incluir anexos”** ao baixar o backup (o arquivo fica maior).
+
 ## 3. Publicar de graça (para abrir no celular)
 
 ### Opção A: Vercel
@@ -68,5 +73,5 @@ O app usa `HashRouter` (endereços com `#`), então funciona em qualquer hospeda
 ## 5. Avisos importantes ⚠️
 
 - **Atualizações:** o app instalado guarda uma cópia para funcionar sem internet. Depois de uma atualização, pode ser preciso **fechar e abrir o app duas vezes** para ver a versão nova.
-- **Seu progresso fica só no aparelho.** No iPhone, o Safari pode apagar dados de sites **não instalados** que ficam 7 dias sem uso. Por isso: instale na tela inicial e faça **backup** (Configurações → Baixar backup ou Enviar). O app lembra você quando o último backup tem mais de 7 dias.
+- **Seu progresso e seus anexos ficam só no aparelho.** No iPhone, o Safari pode apagar dados de sites **não instalados** que ficam 7 dias sem uso. Por isso: instale na tela inicial e faça **backup** (Configurações → Baixar backup ou Enviar). O app lembra você quando o último backup tem mais de 7 dias.
 - O backup também serve para passar o progresso de um aparelho para outro: baixe num e use “Restaurar backup” no outro.

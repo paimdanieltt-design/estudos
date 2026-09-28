@@ -5,6 +5,7 @@ import { fmtDiaMes, fmtMinutos } from '../nucleo/datas'
 import type { Item } from '../nucleo/itens'
 import { reagendadoNaoFeito } from '../nucleo/calculos'
 import { Checkbox, Tag } from './basicos'
+import { Notas } from './Notas'
 
 export function LinhaItem({ item, acoes, mostrarPrazoOriginal = false }: { item: Item; acoes?: ReactNode; mostrarPrazoOriginal?: boolean }) {
   const { alternarItem, hoje, plano, prog } = useEstudos()
@@ -30,6 +31,7 @@ export function LinhaItem({ item, acoes, mostrarPrazoOriginal = false }: { item:
             <button className="font-medium text-destaque hover:underline" onClick={() => alternarItem(item)}>↺ Desmarcar</button>
           )}
         </div>
+        <Notas chave={item.chave} />
       </div>
       {acoes && <div className="flex shrink-0 items-start gap-1">{acoes}</div>}
     </div>
