@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Cores do app. Destaque = verde-azulado (teal). Perigo = vermelho (nunca o mesmo do destaque). */
+@theme {
+  --color-fundo: #faf8f5;
+  --color-cartao: #ffffff;
+  --color-tinta: #1c1917;
+  --color-tinta-2: #57534e;
+  --color-tinta-3: #78716c;
+  --color-linha: #e7e2db;
+  --color-destaque: #0f766e;
+  --color-destaque-claro: #ccfbf1;
+  --color-perigo: #dc2626;
+  --color-perigo-claro: #fee2e2;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  background: var(--color-fundo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible { outline: 2px solid var(--color-destaque); outline-offset: 2px; }
+
+/* Espaço para a barra inferior no celular (respeita a área segura do iPhone) */
+.pb-barra { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+.pb-seguro { padding-bottom: env(safe-area-inset-bottom); }
