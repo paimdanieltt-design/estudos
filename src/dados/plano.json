@@ -1,0 +1,3150 @@
+{
+ "inicio": "2026-08-10",
+ "fim": "2026-12-14",
+ "totalSemanas": 19,
+ "primeiraSemanaVisivel": 8,
+ "diaInicialApp": "2026-09-28",
+ "capacidade": {
+  "util": 75,
+  "fimDeSemana": 120
+ },
+ "fases": [
+  {
+   "de": 8,
+   "ate": 10,
+   "nome": "Candidatura do intercâmbio e leituras"
+  },
+  {
+   "de": 11,
+   "ate": 12,
+   "nome": "Anteprojeto, debates e Prova 3"
+  },
+  {
+   "de": 13,
+   "ate": 15,
+   "nome": "Trabalhos e provas de novembro"
+  },
+  {
+   "de": 16,
+   "ate": 19,
+   "nome": "Reta final"
+  }
+ ],
+ "disciplinas": [
+  {
+   "id": "dpp",
+   "nome": "Democracia e Políticas Públicas",
+   "curto": "Democracia",
+   "cor": "#2563eb",
+   "horario": "Ter e Qui, 20h50",
+   "professor": "Luiz Fernando Bessa"
+  },
+  {
+   "id": "etica",
+   "nome": "Ética e Política",
+   "curto": "Ética",
+   "cor": "#7c3aed",
+   "horario": "Sex, 19h",
+   "professor": "Michel Oliveira"
+  },
+  {
+   "id": "hb1",
+   "nome": "História do Brasil 1",
+   "curto": "História",
+   "cor": "#c2410c",
+   "horario": "Seg e Qua, 20h50",
+   "professor": "André Honor"
+  },
+  {
+   "id": "mqapp",
+   "nome": "Métodos Quantitativos Aplicados às Políticas Públicas",
+   "curto": "Métodos",
+   "cor": "#15803d",
+   "horario": "Ter e Qui, 19h",
+   "professor": "Robert Vidigal"
+  },
+  {
+   "id": "pdpp",
+   "nome": "Processo Decisório e Políticas Públicas",
+   "curto": "Processo Decisório",
+   "cor": "#a21caf",
+   "horario": "Seg e Qua, 19h",
+   "professor": "Suylan Midlej"
+  },
+  {
+   "id": "tcc",
+   "nome": "TCC (pré-projeto)",
+   "curto": "TCC",
+   "cor": "#475569",
+   "horario": "",
+   "projeto": true
+  },
+  {
+   "id": "inter",
+   "nome": "Intercâmbio (Temple)",
+   "curto": "Intercâmbio",
+   "cor": "#0e7490",
+   "horario": "",
+   "projeto": true
+  }
+ ],
+ "leituras": [
+  {
+   "id": "l-etica-weber",
+   "disciplinaId": "etica",
+   "prazo": "2026-10-02",
+   "minutos": 60,
+   "titulo": "WEBER. A política como vocação (penúltima e última parte)"
+  },
+  {
+   "id": "l-etica-arendt",
+   "disciplinaId": "etica",
+   "prazo": "2026-10-09",
+   "minutos": 90,
+   "titulo": "ARENDT. O que é política? (cap. 1 a 3) e Sobre a violência (cap. 2)"
+  },
+  {
+   "id": "l-etica-habermas",
+   "disciplinaId": "etica",
+   "prazo": "2026-10-16",
+   "minutos": 60,
+   "titulo": "HABERMAS. Para o uso pragmático, ético e moral da razão prática"
+  },
+  {
+   "id": "l-etica-rawls",
+   "disciplinaId": "etica",
+   "prazo": "2026-10-23",
+   "minutos": 90,
+   "titulo": "RAWLS. Uma Teoria da Justiça — Primeira Parte (cap. 1 a 3)"
+  },
+  {
+   "id": "l-etica-foucault",
+   "disciplinaId": "etica",
+   "prazo": "2026-10-30",
+   "minutos": 60,
+   "titulo": "FOUCAULT. Ética, sexualidade, política, vol. V (tema do meu debate)",
+   "prioritaria": true
+  },
+  {
+   "id": "l-etica-pateman",
+   "disciplinaId": "etica",
+   "prazo": "2026-11-06",
+   "minutos": 60,
+   "titulo": "PATEMAN. O contrato sexual (cap. 1 e 2)"
+  },
+  {
+   "id": "l-etica-mills",
+   "disciplinaId": "etica",
+   "prazo": "2026-11-13",
+   "minutos": 60,
+   "titulo": "MILLS. The Racial Contract (Introdução e cap. 1) — em inglês"
+  },
+  {
+   "id": "l-dpp-ramesh",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-29",
+   "minutos": 30,
+   "titulo": "RAMESH; HOWLETT. Policy capacity (p. 165-171)"
+  },
+  {
+   "id": "l-dpp-gomide",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-29",
+   "minutos": 45,
+   "titulo": "GOMIDE; PIRES. Capacidades estatais e democracia (p. 15-28)"
+  },
+  {
+   "id": "l-dpp-loureiro",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-29",
+   "minutos": 45,
+   "titulo": "LOUREIRO et al. Democracia, arenas decisórias e políticas públicas (Minha Casa Minha Vida)"
+  },
+  {
+   "id": "l-dpp-tarrago",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-01",
+   "minutos": 45,
+   "titulo": "TARRAGÓ; BRUGUÉ; CARDOSO JR. A administração pública deliberativa"
+  },
+  {
+   "id": "l-dpp-gaulejac",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-01",
+   "minutos": 45,
+   "titulo": "GAULEJAC. Gestão como doença social (até a p. 37)"
+  },
+  {
+   "id": "l-dpp-dagnino",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-06",
+   "minutos": 45,
+   "titulo": "DAGNINO. Sociedade civil, participação e cidadania: de que estamos falando?"
+  },
+  {
+   "id": "l-dpp-tatagiba",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-06",
+   "minutos": 45,
+   "titulo": "TATAGIBA; ABERS; SILVA. Movimentos sociais e políticas públicas"
+  },
+  {
+   "id": "l-dpp-fraser1",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-13",
+   "minutos": 60,
+   "titulo": "FRASER. Justiça anormal (apresentação do meu Grupo 7)",
+   "prioritaria": true
+  },
+  {
+   "id": "l-dpp-fraser2",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-13",
+   "minutos": 60,
+   "titulo": "FRASER. Rethinking the public sphere — em inglês (Grupo 7)",
+   "prioritaria": true
+  },
+  {
+   "id": "l-dpp-phillips",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-15",
+   "minutos": 45,
+   "titulo": "PHILLIPS. Da desigualdade à diferença: um caso grave de deslocamento?"
+  },
+  {
+   "id": "l-dpp-theodoro",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-15",
+   "minutos": 30,
+   "titulo": "THEODORO. As relações raciais, o racismo e as políticas públicas"
+  },
+  {
+   "id": "l-dpp-gonzalez",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-15",
+   "minutos": 30,
+   "titulo": "GONZALEZ. A categoria político-cultural de amefricanidade (p. 69-82)"
+  },
+  {
+   "id": "l-dpp-crenshaw",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-15",
+   "minutos": 20,
+   "titulo": "Vídeo: CRENSHAW. A urgência da interseccionalidade (TED)"
+  },
+  {
+   "id": "l-dpp-manin",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-20",
+   "minutos": 45,
+   "titulo": "MANIN; PRZEWORSKI; STOKES. Eleições e representação"
+  },
+  {
+   "id": "l-dpp-lavalle",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-20",
+   "minutos": 45,
+   "titulo": "LAVALLE; VERA. A trama da crítica democrática"
+  },
+  {
+   "id": "l-dpp-cohen",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-27",
+   "minutos": 30,
+   "titulo": "COHEN; FUNG. Democracia radical (p. 221-237)"
+  },
+  {
+   "id": "l-dpp-borba",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-27",
+   "minutos": 30,
+   "titulo": "BORBA; LÜCHMANN. A representação política nos Conselhos Gestores"
+  },
+  {
+   "id": "l-dpp-dowbor",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-29",
+   "minutos": 45,
+   "titulo": "DOWBOR; CARLOS; ALBUQUERQUE. As origens movimentistas de políticas públicas"
+  },
+  {
+   "id": "l-dpp-abers",
+   "disciplinaId": "dpp",
+   "prazo": "2026-10-29",
+   "minutos": 45,
+   "titulo": "ABERS; SERAFIM; TATAGIBA. Repertórios de interação Estado-sociedade"
+  },
+  {
+   "id": "l-mq-c8",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-10-06",
+   "minutos": 75,
+   "titulo": "Gravetter & Wallnau, cap. 8 — Testes de hipóteses"
+  },
+  {
+   "id": "l-mq-c9",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-10-08",
+   "minutos": 75,
+   "titulo": "Gravetter & Wallnau, cap. 9 — Introdução aos testes t"
+  },
+  {
+   "id": "l-mq-c10",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-10-13",
+   "minutos": 75,
+   "titulo": "Gravetter & Wallnau, cap. 10 (exceto p. 314-315) — Intervalos de confiança e testes t"
+  },
+  {
+   "id": "l-mq-c11",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-10-20",
+   "minutos": 75,
+   "titulo": "Gravetter & Wallnau, cap. 11 — Testes t para amostras relacionadas"
+  },
+  {
+   "id": "l-mq-america",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-10-22",
+   "minutos": 45,
+   "titulo": "Atividade assíncrona: AmericasBarometer 2026 (USP)"
+  },
+  {
+   "id": "l-mq-c15",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-11-03",
+   "minutos": 75,
+   "titulo": "Gravetter & Wallnau, cap. 15 (exceto seção 15.5) — Correlação"
+  },
+  {
+   "id": "l-mq-c16",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-11-10",
+   "minutos": 60,
+   "titulo": "Gravetter & Wallnau, cap. 16 (p. 529-537, 544-545 e 551-552) — Regressão"
+  },
+  {
+   "id": "l-pd-capella2",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-09-30",
+   "minutos": 30,
+   "titulo": "CAPELLA (2018) p. 71-74 e ROSA et al. (2021) p. 55-58 — Atividade 8"
+  },
+  {
+   "id": "l-pd-capella3",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-10-05",
+   "minutos": 60,
+   "titulo": "CAPELLA (2018) p. 74-98 — Instrumentos de políticas públicas (Atividade 9)"
+  },
+  {
+   "id": "l-pd-halpern",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-10-07",
+   "minutos": 45,
+   "titulo": "HALPERN et al. (2021) p. 31-38 — Abordagens dos instrumentos da ação pública"
+  },
+  {
+   "id": "l-pd-rosa23",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-10-14",
+   "minutos": 45,
+   "titulo": "ROSA et al. (2021) p. 23-37 — Atividade 10"
+  },
+  {
+   "id": "l-pd-salvador",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-10-19",
+   "minutos": 75,
+   "titulo": "SALVADOR (2010) e INESC (2017) Cartilha Orçamento e Direitos — Atividade 11"
+  },
+  {
+   "id": "l-pd-soares",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-10-21",
+   "minutos": 75,
+   "titulo": "SOARES; MACHADO (2018) p. 71-112 — Federalismo (Atividade 12)"
+  },
+  {
+   "id": "l-pd-pnrh",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-10-26",
+   "minutos": 45,
+   "titulo": "Política Nacional de Recursos Hídricos (itens para discussão em sala)"
+  },
+  {
+   "id": "l-pd-bonotto",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-11-04",
+   "minutos": 45,
+   "titulo": "BONOTTO et al. (2018) — A sustentabilidade como um wicked problem (Atividade 13)"
+  },
+  {
+   "id": "l-hb-russel",
+   "disciplinaId": "hb1",
+   "prazo": "2026-09-30",
+   "minutos": 60,
+   "titulo": "RUSSEL-WOOD (2005) Escravos e libertos no Brasil colonial (p. 53-81)"
+  },
+  {
+   "id": "l-hb-pimentel",
+   "disciplinaId": "hb1",
+   "prazo": "2026-10-14",
+   "minutos": 60,
+   "titulo": "PIMENTEL (1995) Viagem ao fundo das consciências (p. 161-194)"
+  },
+  {
+   "id": "l-hb-borges",
+   "disciplinaId": "hb1",
+   "prazo": "2026-10-19",
+   "minutos": 60,
+   "titulo": "BORGES (2005) Escravos e libertos nas irmandades do Rosário (p. 43-77)"
+  },
+  {
+   "id": "l-hb-pares",
+   "disciplinaId": "hb1",
+   "prazo": "2026-10-21",
+   "minutos": 45,
+   "titulo": "PARÉS (2018) A formação do Candomblé (p. 101-124)"
+  },
+  {
+   "id": "l-hb-vainfas1",
+   "disciplinaId": "hb1",
+   "prazo": "2026-11-11",
+   "minutos": 60,
+   "titulo": "VAINFAS (2010) Trópico dos pecados (p. 147-189)"
+  },
+  {
+   "id": "l-hb-braz",
+   "disciplinaId": "hb1",
+   "prazo": "2026-11-16",
+   "minutos": 60,
+   "titulo": "BRAZ (2018) Baltasar da Lomba (monografia sobre sodomia e Inquisição)"
+  },
+  {
+   "id": "l-hb-franco",
+   "disciplinaId": "hb1",
+   "prazo": "2026-11-18",
+   "minutos": 45,
+   "titulo": "FRANCO (2016) Discriminação e abandono de recém-nascidos mestiços"
+  },
+  {
+   "id": "l-hb-vainfas2",
+   "disciplinaId": "hb1",
+   "prazo": "2026-11-23",
+   "minutos": 60,
+   "titulo": "VAINFAS (2014) Tempo dos Flamengos (p. 227-265)"
+  },
+  {
+   "id": "l-hb-honor",
+   "disciplinaId": "hb1",
+   "prazo": "2026-11-25",
+   "minutos": 45,
+   "titulo": "HONOR (2019) Santa Teresa e os fundadores (iconologia da pintura)"
+  }
+ ],
+ "eventos": [
+  {
+   "id": "e-carta",
+   "disciplinaId": "inter",
+   "tipo": "entrega",
+   "data": "2026-10-02",
+   "titulo": "Carta de intenção — Temple",
+   "detalhe": "Prazo que você me passou: sexta 02/10."
+  },
+  {
+   "id": "e-passaporte",
+   "disciplinaId": "inter",
+   "tipo": "pessoal",
+   "data": "2026-10-02",
+   "titulo": "Renovar o passaporte",
+   "hora": "15h40"
+  },
+  {
+   "id": "e-duolingo",
+   "disciplinaId": "inter",
+   "tipo": "prova",
+   "data": "2026-10-04",
+   "titulo": "Teste Duolingo English Test",
+   "detalhe": "Domingo. Precisa de documento com foto, câmera e lugar silencioso."
+  },
+  {
+   "id": "e-candidatura",
+   "disciplinaId": "inter",
+   "tipo": "entrega",
+   "data": "2026-10-15",
+   "titulo": "Prazo final da candidatura — Temple"
+  },
+  {
+   "id": "e-etica-debate",
+   "disciplinaId": "etica",
+   "tipo": "apresentacao",
+   "data": "2026-10-30",
+   "titulo": "Debate do Grupo 8: Ética e mecanismos de controle",
+   "peso": "40% (com o relatório)",
+   "detalhe": "Todos do grupo precisam estar presentes. Falta deve ser justificada por e-mail."
+  },
+  {
+   "id": "e-etica-relatorio",
+   "disciplinaId": "etica",
+   "tipo": "entrega",
+   "data": "2026-11-06",
+   "titulo": "Relatório do debate (Grupo 8), por e-mail",
+   "peso": "40% (com o debate)"
+  },
+  {
+   "id": "e-etica-tema",
+   "disciplinaId": "etica",
+   "tipo": "entrega",
+   "data": "2026-11-13",
+   "titulo": "Entrega do tema da prova escrita"
+  },
+  {
+   "id": "e-etica-prova",
+   "disciplinaId": "etica",
+   "tipo": "entrega",
+   "data": "2026-11-20",
+   "titulo": "Prova escrita (por e-mail até 23h)",
+   "hora": "23h",
+   "peso": "60%",
+   "detalhe": "4 a 6 laudas, Times New Roman 12, espaçamento 1,5. Nome do arquivo: nome completo."
+  },
+  {
+   "id": "e-dpp-g7",
+   "disciplinaId": "dpp",
+   "tipo": "apresentacao",
+   "data": "2026-10-13",
+   "titulo": "Apresentação do Grupo 7 (Fraser)",
+   "peso": "25% (apresentações em grupo)",
+   "detalhe": "Entregar resenha crítica (mín. 2 páginas) ou o PowerPoint."
+  },
+  {
+   "id": "e-dpp-ante",
+   "disciplinaId": "dpp",
+   "tipo": "entrega",
+   "data": "2026-10-27",
+   "titulo": "Anteprojeto de pesquisa-ação (3 a 4 páginas)",
+   "peso": "20%"
+  },
+  {
+   "id": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "tipo": "entrega",
+   "data": "2026-11-17",
+   "titulo": "Projeto de pesquisa-ação (15-18 págs.) e apresentação",
+   "peso": "30% + 10%",
+   "detalhe": "Apresentação e entrega em 17 ou 19/11 (confirmar o dia do grupo)."
+  },
+  {
+   "id": "e-mq-l3",
+   "disciplinaId": "mqapp",
+   "tipo": "entrega",
+   "data": "2026-10-27",
+   "titulo": "Lista de exercícios 3",
+   "peso": "5 pontos",
+   "detalhe": "Entregar no início da aula."
+  },
+  {
+   "id": "e-mq-p3",
+   "disciplinaId": "mqapp",
+   "tipo": "prova",
+   "data": "2026-10-29",
+   "titulo": "Prova da Unidade 3",
+   "peso": "20 pontos",
+   "detalhe": "Múltipla escolha. Pode 1 folha A4 (frente e verso) e calculadora simples."
+  },
+  {
+   "id": "e-mq-l4",
+   "disciplinaId": "mqapp",
+   "tipo": "entrega",
+   "data": "2026-11-24",
+   "titulo": "Lista de exercícios 4",
+   "peso": "5 pontos"
+  },
+  {
+   "id": "e-mq-p4",
+   "disciplinaId": "mqapp",
+   "tipo": "prova",
+   "data": "2026-11-26",
+   "titulo": "Prova da Unidade 4",
+   "peso": "20 pontos"
+  },
+  {
+   "id": "e-mq-final",
+   "disciplinaId": "mqapp",
+   "tipo": "prova",
+   "data": "2026-12-03",
+   "titulo": "Prova final (substitui a menor nota)",
+   "detalhe": "Cumulativa, múltipla escolha, com consulta."
+  },
+  {
+   "id": "e-mq-part2",
+   "disciplinaId": "mqapp",
+   "tipo": "entrega",
+   "data": "2026-12-08",
+   "titulo": "Exercício de participação 2 (assíncrono)"
+  },
+  {
+   "id": "e-pd-grupo",
+   "disciplinaId": "pdpp",
+   "tipo": "entrega",
+   "data": "2026-10-14",
+   "titulo": "Sinalizar o grupo do trabalho final (5 pessoas)"
+  },
+  {
+   "id": "e-pd-tema",
+   "disciplinaId": "pdpp",
+   "tipo": "entrega",
+   "data": "2026-10-21",
+   "titulo": "Sinalizar o tema (política pública) do trabalho final"
+  },
+  {
+   "id": "e-pd-previa",
+   "disciplinaId": "pdpp",
+   "tipo": "apresentacao",
+   "data": "2026-11-16",
+   "titulo": "Prévia do trabalho final",
+   "detalhe": "Prévias em 16, 18 ou 23/11 (confirmar o dia do grupo)."
+  },
+  {
+   "id": "e-pd-final",
+   "disciplinaId": "pdpp",
+   "tipo": "entrega",
+   "data": "2026-11-27",
+   "titulo": "Trabalho final — postar no Teams",
+   "peso": "55%"
+  },
+  {
+   "id": "e-pd-apres",
+   "disciplinaId": "pdpp",
+   "tipo": "apresentacao",
+   "data": "2026-11-30",
+   "titulo": "Apresentação do trabalho final",
+   "detalhe": "Apresentações em 30/11, 02/12 ou 07/12."
+  },
+  {
+   "id": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "tipo": "entrega",
+   "data": "2026-11-04",
+   "titulo": "Revisão bibliográfica (3 artigos)",
+   "peso": "30 pontos",
+   "detalhe": "Avaliação em 04/11 ou 09/11 (confirmar)."
+  },
+  {
+   "id": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "tipo": "apresentacao",
+   "data": "2026-12-02",
+   "titulo": "Apresentação dos planos de aula",
+   "peso": "35 pontos (2 planos)",
+   "detalhe": "Apresentações em 02/12 e 07/12. Plano só expositivo é zerado."
+  },
+  {
+   "id": "e-hb-prova",
+   "disciplinaId": "hb1",
+   "tipo": "prova",
+   "data": "2026-12-09",
+   "titulo": "Prova escrita",
+   "peso": "35 pontos",
+   "detalhe": "Sem consulta aos textos; 30 min iniciais com anotações. Todos os eixos."
+  },
+  {
+   "id": "e-tcc-linha",
+   "disciplinaId": "tcc",
+   "tipo": "pessoal",
+   "data": "2026-10-30",
+   "titulo": "Escolher a linha de pesquisa do TCC"
+  },
+  {
+   "id": "e-tcc-refs",
+   "disciplinaId": "tcc",
+   "tipo": "pessoal",
+   "data": "2026-11-20",
+   "titulo": "Ler 3 a 5 referências centrais do TCC"
+  },
+  {
+   "id": "e-tcc-esq",
+   "disciplinaId": "tcc",
+   "tipo": "pessoal",
+   "data": "2026-12-14",
+   "titulo": "Esqueleto do pré-projeto do TCC"
+  }
+ ],
+ "metas": [
+  {
+   "id": "m-8-carta",
+   "semana": 8,
+   "titulo": "Carta de intenção da Temple",
+   "disciplinaId": "inter"
+  },
+  {
+   "id": "m-8-duo-prep",
+   "semana": 8,
+   "titulo": "Preparar o teste Duolingo",
+   "disciplinaId": "inter"
+  },
+  {
+   "id": "m-8-leit-dpp",
+   "semana": 8,
+   "titulo": "Democracia: leituras da semana",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-8-leit-etica",
+   "semana": 8,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-8-leit-hb1",
+   "semana": 8,
+   "titulo": "História: leituras da semana",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-8-leit-mqapp",
+   "semana": 8,
+   "titulo": "Métodos: leituras da semana",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-8-leit-pdpp",
+   "semana": 8,
+   "titulo": "Processo Decisório: leituras da semana",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-9-candidatura",
+   "semana": 9,
+   "titulo": "Fechar a candidatura da Temple",
+   "disciplinaId": "inter"
+  },
+  {
+   "id": "m-9-dpp-ante",
+   "semana": 9,
+   "titulo": "Anteprojeto de pesquisa-ação",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-9-dpp-g7",
+   "semana": 9,
+   "titulo": "Apresentação do Grupo 7 (Fraser)",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-9-hb-revisao",
+   "semana": 9,
+   "titulo": "Revisão bibliográfica (3 artigos)",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-9-leit-dpp",
+   "semana": 9,
+   "titulo": "Democracia: leituras da semana",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-9-leit-etica",
+   "semana": 9,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-9-leit-mqapp",
+   "semana": 9,
+   "titulo": "Métodos: leituras da semana",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-9-leit-pdpp",
+   "semana": 9,
+   "titulo": "Processo Decisório: leituras da semana",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-9-pd-grupo",
+   "semana": 9,
+   "titulo": "Grupo do trabalho final",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-9-tcc-linha",
+   "semana": 9,
+   "titulo": "TCC: escolher a linha de pesquisa",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-10-candidatura",
+   "semana": 10,
+   "titulo": "Fechar a candidatura da Temple",
+   "disciplinaId": "inter"
+  },
+  {
+   "id": "m-10-dpp-ante",
+   "semana": 10,
+   "titulo": "Anteprojeto de pesquisa-ação",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-10-dpp-g7",
+   "semana": 10,
+   "titulo": "Apresentação do Grupo 7 (Fraser)",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-10-etica-debate",
+   "semana": 10,
+   "titulo": "Debate do Grupo 8 (Ética e mecanismos de controle)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-10-hb-revisao",
+   "semana": 10,
+   "titulo": "Revisão bibliográfica (3 artigos)",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-10-leit-dpp",
+   "semana": 10,
+   "titulo": "Democracia: leituras da semana",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-10-leit-etica",
+   "semana": 10,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-10-leit-hb1",
+   "semana": 10,
+   "titulo": "História: leituras da semana",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-10-leit-mqapp",
+   "semana": 10,
+   "titulo": "Métodos: leituras da semana",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-10-leit-pdpp",
+   "semana": 10,
+   "titulo": "Processo Decisório: leituras da semana",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-10-mq-l3",
+   "semana": 10,
+   "titulo": "Lista de exercícios 3",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-10-tcc-linha",
+   "semana": 10,
+   "titulo": "TCC: escolher a linha de pesquisa",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-11-dpp-ante",
+   "semana": 11,
+   "titulo": "Anteprojeto de pesquisa-ação",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-11-etica-debate",
+   "semana": 11,
+   "titulo": "Debate do Grupo 8 (Ética e mecanismos de controle)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-11-hb-revisao",
+   "semana": 11,
+   "titulo": "Revisão bibliográfica (3 artigos)",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-11-leit-dpp",
+   "semana": 11,
+   "titulo": "Democracia: leituras da semana",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-11-leit-etica",
+   "semana": 11,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-11-leit-hb1",
+   "semana": 11,
+   "titulo": "História: leituras da semana",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-11-leit-mqapp",
+   "semana": 11,
+   "titulo": "Métodos: leituras da semana",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-11-leit-pdpp",
+   "semana": 11,
+   "titulo": "Processo Decisório: leituras da semana",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-11-mq-l3",
+   "semana": 11,
+   "titulo": "Lista de exercícios 3",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-11-mq-p3",
+   "semana": 11,
+   "titulo": "Estudar para a Prova 3",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-11-pd-tema",
+   "semana": 11,
+   "titulo": "Política pública do trabalho final",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-11-tcc-linha",
+   "semana": 11,
+   "titulo": "TCC: escolher a linha de pesquisa",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-12-dpp-proj",
+   "semana": 12,
+   "titulo": "Projeto de pesquisa-ação (15 a 18 páginas)",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-12-etica-debate",
+   "semana": 12,
+   "titulo": "Debate do Grupo 8 (Ética e mecanismos de controle)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-12-etica-relatorio",
+   "semana": 12,
+   "titulo": "Relatório do debate (Grupo 8)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-12-hb-revisao",
+   "semana": 12,
+   "titulo": "Revisão bibliográfica (3 artigos)",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-12-leit-dpp",
+   "semana": 12,
+   "titulo": "Democracia: leituras da semana",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-12-leit-etica",
+   "semana": 12,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-12-leit-mqapp",
+   "semana": 12,
+   "titulo": "Métodos: leituras da semana",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-12-mq-l3",
+   "semana": 12,
+   "titulo": "Lista de exercícios 3",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-12-mq-p3",
+   "semana": 12,
+   "titulo": "Estudar para a Prova 3",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-12-pd-previa",
+   "semana": 12,
+   "titulo": "Trabalho final: análise e prévia",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-12-tcc-linha",
+   "semana": 12,
+   "titulo": "TCC: escolher a linha de pesquisa",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-13-dpp-proj",
+   "semana": 13,
+   "titulo": "Projeto de pesquisa-ação (15 a 18 páginas)",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-13-etica-relatorio",
+   "semana": 13,
+   "titulo": "Relatório do debate (Grupo 8)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-13-etica-tema",
+   "semana": 13,
+   "titulo": "Tema da prova escrita de Ética",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-13-leit-etica",
+   "semana": 13,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-13-leit-mqapp",
+   "semana": 13,
+   "titulo": "Métodos: leituras da semana",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-13-leit-pdpp",
+   "semana": 13,
+   "titulo": "Processo Decisório: leituras da semana",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-13-pd-previa",
+   "semana": 13,
+   "titulo": "Trabalho final: análise e prévia",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-13-tcc-refs",
+   "semana": 13,
+   "titulo": "TCC: referências centrais",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-14-dpp-proj",
+   "semana": 14,
+   "titulo": "Projeto de pesquisa-ação (15 a 18 páginas)",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-14-etica-prova",
+   "semana": 14,
+   "titulo": "Prova escrita de Ética (4 a 6 laudas)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-14-etica-tema",
+   "semana": 14,
+   "titulo": "Tema da prova escrita de Ética",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-14-leit-etica",
+   "semana": 14,
+   "titulo": "Ética: leituras da semana",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-14-leit-hb1",
+   "semana": 14,
+   "titulo": "História: leituras da semana",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-14-mq-l4",
+   "semana": 14,
+   "titulo": "Lista de exercícios 4",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-14-pd-previa",
+   "semana": 14,
+   "titulo": "Trabalho final: análise e prévia",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-14-tcc-refs",
+   "semana": 14,
+   "titulo": "TCC: referências centrais",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-15-dpp-proj",
+   "semana": 15,
+   "titulo": "Projeto de pesquisa-ação (15 a 18 páginas)",
+   "disciplinaId": "dpp"
+  },
+  {
+   "id": "m-15-etica-prova",
+   "semana": 15,
+   "titulo": "Prova escrita de Ética (4 a 6 laudas)",
+   "disciplinaId": "etica"
+  },
+  {
+   "id": "m-15-hb-planos",
+   "semana": 15,
+   "titulo": "Planos de aula (2)",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-15-leit-hb1",
+   "semana": 15,
+   "titulo": "História: leituras da semana",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-15-mq-l4",
+   "semana": 15,
+   "titulo": "Lista de exercícios 4",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-15-mq-p4",
+   "semana": 15,
+   "titulo": "Estudar para a Prova 4",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-15-pd-final",
+   "semana": 15,
+   "titulo": "Trabalho final: versão para entregar",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-15-tcc-refs",
+   "semana": 15,
+   "titulo": "TCC: referências centrais",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-16-hb-planos",
+   "semana": 16,
+   "titulo": "Planos de aula (2)",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-16-leit-hb1",
+   "semana": 16,
+   "titulo": "História: leituras da semana",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-16-mq-l4",
+   "semana": 16,
+   "titulo": "Lista de exercícios 4",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-16-mq-p4",
+   "semana": 16,
+   "titulo": "Estudar para a Prova 4",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-16-pd-apres",
+   "semana": 16,
+   "titulo": "Apresentação do trabalho final",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-16-pd-final",
+   "semana": 16,
+   "titulo": "Trabalho final: versão para entregar",
+   "disciplinaId": "pdpp"
+  },
+  {
+   "id": "m-16-tcc-esq",
+   "semana": 16,
+   "titulo": "TCC: esqueleto do pré-projeto",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-17-hb-prova",
+   "semana": 17,
+   "titulo": "Estudar para a prova de História do Brasil 1",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-17-mq-final",
+   "semana": 17,
+   "titulo": "Estudar para a Prova final",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-17-tcc-esq",
+   "semana": 17,
+   "titulo": "TCC: esqueleto do pré-projeto",
+   "disciplinaId": "tcc"
+  },
+  {
+   "id": "m-18-hb-prova",
+   "semana": 18,
+   "titulo": "Estudar para a prova de História do Brasil 1",
+   "disciplinaId": "hb1"
+  },
+  {
+   "id": "m-18-mq-part2",
+   "semana": 18,
+   "titulo": "Exercício de participação 2",
+   "disciplinaId": "mqapp"
+  },
+  {
+   "id": "m-18-tcc-esq",
+   "semana": 18,
+   "titulo": "TCC: esqueleto do pré-projeto",
+   "disciplinaId": "tcc"
+  }
+ ],
+ "tarefas": [
+  {
+   "id": "t-carta-1",
+   "titulo": "Rascunhar a carta de intenção (por que Temple, por que Ciência Política)",
+   "minutos": 60,
+   "eventoId": "e-carta",
+   "disciplinaId": "inter",
+   "semana": 8,
+   "dow": 0,
+   "metaId": "m-8-carta"
+  },
+  {
+   "id": "t-leit-dpp-2026-09-29",
+   "titulo": "Ler para a aula de 29/09: RAMESH; HOWLETT + GOMIDE; PIRES + LOUREIRO et al. Democracia, arenas decisórias",
+   "minutos": 120,
+   "leituraIds": [
+    "l-dpp-ramesh",
+    "l-dpp-gomide",
+    "l-dpp-loureiro"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 8,
+   "dow": 0,
+   "metaId": "m-8-leit-dpp"
+  },
+  {
+   "id": "t-carta-2",
+   "titulo": "Revisar a carta: conteúdo, clareza e inglês",
+   "minutos": 45,
+   "eventoId": "e-carta",
+   "disciplinaId": "inter",
+   "semana": 8,
+   "dow": 1,
+   "metaId": "m-8-carta"
+  },
+  {
+   "id": "t-leit-hb1-2026-09-30",
+   "titulo": "Ler: RUSSEL-WOOD (2005) Escravos e libertos no Brasil colonial (p. 53-81)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-hb-russel"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 8,
+   "dow": 1,
+   "metaId": "m-8-leit-hb1"
+  },
+  {
+   "id": "t-leit-pdpp-2026-09-30",
+   "titulo": "Ler: CAPELLA (2018) p. 71-74 e ROSA et al. (2021) p. 55-58 — Atividade 8",
+   "minutos": 30,
+   "leituraIds": [
+    "l-pd-capella2"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 8,
+   "dow": 1,
+   "metaId": "m-8-leit-pdpp"
+  },
+  {
+   "id": "t-leit-dpp-2026-10-01",
+   "titulo": "Ler para a aula de 01/10: TARRAGÓ; BRUGUÉ; CARDOSO JR + GAULEJAC",
+   "minutos": 90,
+   "leituraIds": [
+    "l-dpp-tarrago",
+    "l-dpp-gaulejac"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 8,
+   "dow": 2,
+   "metaId": "m-8-leit-dpp"
+  },
+  {
+   "id": "t-carta-3",
+   "titulo": "Finalizar e salvar a versão final da carta",
+   "minutos": 30,
+   "eventoId": "e-carta",
+   "disciplinaId": "inter",
+   "semana": 8,
+   "dow": 3,
+   "metaId": "m-8-carta"
+  },
+  {
+   "id": "t-leit-etica-2026-10-02",
+   "titulo": "Ler: WEBER. A política como vocação (penúltima e última parte)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-etica-weber"
+   ],
+   "disciplinaId": "etica",
+   "semana": 8,
+   "dow": 3,
+   "metaId": "m-8-leit-etica"
+  },
+  {
+   "id": "t-fixo-passaporte",
+   "titulo": "Renovar o passaporte (15h40)",
+   "minutos": 60,
+   "eventoId": "e-passaporte",
+   "hora": "15h40",
+   "disciplinaId": "inter",
+   "semana": 8,
+   "dow": 4,
+   "metaId": "m-8-carta"
+  },
+  {
+   "id": "t-duo-prep-1",
+   "titulo": "Preparar o teste: documento com foto, câmera, internet e lugar silencioso",
+   "minutos": 20,
+   "eventoId": "e-duolingo",
+   "disciplinaId": "inter",
+   "semana": 8,
+   "dow": 5,
+   "metaId": "m-8-duo-prep"
+  },
+  {
+   "id": "t-leit-pdpp-2026-10-05",
+   "titulo": "Ler: CAPELLA (2018) p. 74-98 — Instrumentos de políticas públicas (Atividade 9)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-pd-capella3"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 8,
+   "dow": 5,
+   "metaId": "m-8-leit-pdpp"
+  },
+  {
+   "id": "t-fixo-duolingo",
+   "titulo": "Fazer o teste Duolingo English Test",
+   "minutos": 60,
+   "eventoId": "e-duolingo",
+   "disciplinaId": "inter",
+   "semana": 8,
+   "dow": 6,
+   "metaId": "m-8-duo-prep"
+  },
+  {
+   "id": "t-leit-mqapp-2026-10-06",
+   "titulo": "Ler: Gravetter & Wallnau, cap. 8 — Testes de hipóteses",
+   "minutos": 75,
+   "leituraIds": [
+    "l-mq-c8"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 8,
+   "dow": 6,
+   "metaId": "m-8-leit-mqapp"
+  },
+  {
+   "id": "t-rev-2026-10-04",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 8,
+   "dow": 6
+  },
+  {
+   "id": "t-leit-dpp-2026-10-06",
+   "titulo": "Ler para a aula de 06/10: DAGNINO + TATAGIBA; ABERS; SILVA",
+   "minutos": 90,
+   "leituraIds": [
+    "l-dpp-dagnino",
+    "l-dpp-tatagiba"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 9,
+   "dow": 0,
+   "metaId": "m-9-leit-dpp"
+  },
+  {
+   "id": "t-candidatura-1",
+   "titulo": "Conferir a lista de documentos exigidos pela Temple",
+   "minutos": 30,
+   "eventoId": "e-candidatura",
+   "disciplinaId": "inter",
+   "semana": 9,
+   "dow": 1,
+   "metaId": "m-9-candidatura"
+  },
+  {
+   "id": "t-leit-pdpp-2026-10-07",
+   "titulo": "Ler: HALPERN et al. (2021) p. 31-38 — Abordagens dos instrumentos da ação pública",
+   "minutos": 45,
+   "leituraIds": [
+    "l-pd-halpern"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 9,
+   "dow": 1,
+   "metaId": "m-9-leit-pdpp"
+  },
+  {
+   "id": "t-dpp-g7-1",
+   "titulo": "Combinar com o Grupo 7 quem apresenta cada ponto de Fraser",
+   "minutos": 30,
+   "eventoId": "e-dpp-g7",
+   "disciplinaId": "dpp",
+   "semana": 9,
+   "dow": 2,
+   "metaId": "m-9-dpp-g7"
+  },
+  {
+   "id": "t-leit-mqapp-2026-10-08",
+   "titulo": "Ler: Gravetter & Wallnau, cap. 9 — Introdução aos testes t",
+   "minutos": 75,
+   "leituraIds": [
+    "l-mq-c9"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 9,
+   "dow": 2,
+   "metaId": "m-9-leit-mqapp"
+  },
+  {
+   "id": "t-leit-etica-2026-10-09",
+   "titulo": "Ler: ARENDT. O que é política? (cap. 1 a 3) e Sobre a violência (cap. 2)",
+   "minutos": 90,
+   "leituraIds": [
+    "l-etica-arendt"
+   ],
+   "disciplinaId": "etica",
+   "semana": 9,
+   "dow": 3,
+   "metaId": "m-9-leit-etica"
+  },
+  {
+   "id": "t-dpp-g7-2",
+   "titulo": "Montar a resenha crítica (mín. 2 páginas) ou o PowerPoint",
+   "minutos": 75,
+   "eventoId": "e-dpp-g7",
+   "disciplinaId": "dpp",
+   "semana": 9,
+   "dow": 4,
+   "metaId": "m-9-dpp-g7"
+  },
+  {
+   "id": "t-pd-grupo-1",
+   "titulo": "Combinar com colegas o grupo do trabalho final (5 pessoas)",
+   "minutos": 20,
+   "eventoId": "e-pd-grupo",
+   "disciplinaId": "pdpp",
+   "semana": 9,
+   "dow": 4,
+   "metaId": "m-9-pd-grupo"
+  },
+  {
+   "id": "t-candidatura-2",
+   "titulo": "Reunir e enviar os documentos pendentes (histórico, comprovantes, cartas)",
+   "minutos": 60,
+   "eventoId": "e-candidatura",
+   "disciplinaId": "inter",
+   "semana": 9,
+   "dow": 5,
+   "metaId": "m-9-candidatura"
+  },
+  {
+   "id": "t-dpp-ante-1",
+   "titulo": "Definir com o grupo tema, problema e local (locus) da pesquisa-ação",
+   "minutos": 45,
+   "eventoId": "e-dpp-ante",
+   "disciplinaId": "dpp",
+   "semana": 9,
+   "dow": 5,
+   "metaId": "m-9-dpp-ante"
+  },
+  {
+   "id": "t-hb-revisao-1",
+   "titulo": "Escolher a temática livre da revisão bibliográfica",
+   "minutos": 30,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 9,
+   "dow": 5,
+   "metaId": "m-9-hb-revisao"
+  },
+  {
+   "id": "t-tcc-linha-1",
+   "titulo": "Listar 3 possíveis temas que me interessam (Ciência Política / políticas públicas)",
+   "minutos": 45,
+   "eventoId": "e-tcc-linha",
+   "disciplinaId": "tcc",
+   "semana": 9,
+   "dow": 5,
+   "metaId": "m-9-tcc-linha"
+  },
+  {
+   "id": "t-hb-revisao-2",
+   "titulo": "Buscar 3 artigos sobre a temática (que não sejam leituras obrigatórias)",
+   "minutos": 60,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 9,
+   "dow": 6,
+   "metaId": "m-9-hb-revisao"
+  },
+  {
+   "id": "t-leit-dpp-2026-10-13",
+   "titulo": "Ler para a aula de 13/10: FRASER + FRASER",
+   "minutos": 120,
+   "leituraIds": [
+    "l-dpp-fraser1",
+    "l-dpp-fraser2"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 9,
+   "dow": 6,
+   "metaId": "m-9-leit-dpp"
+  },
+  {
+   "id": "t-rev-2026-10-11",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 9,
+   "dow": 6
+  },
+  {
+   "id": "t-dpp-g7-3",
+   "titulo": "Ensaiar a apresentação e ligar com um problema atual",
+   "minutos": 45,
+   "eventoId": "e-dpp-g7",
+   "disciplinaId": "dpp",
+   "semana": 10,
+   "dow": 0,
+   "metaId": "m-10-dpp-g7"
+  },
+  {
+   "id": "t-etica-debate-1",
+   "titulo": "Combinar com o grupo o recorte do debate e a divisão de falas",
+   "minutos": 30,
+   "eventoId": "e-etica-debate",
+   "disciplinaId": "etica",
+   "semana": 10,
+   "dow": 0,
+   "metaId": "m-10-etica-debate"
+  },
+  {
+   "id": "t-leit-mqapp-2026-10-13",
+   "titulo": "Ler: Gravetter & Wallnau, cap. 10 (exceto p. 314-315) — Intervalos de confiança e testes t",
+   "minutos": 75,
+   "leituraIds": [
+    "l-mq-c10"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 10,
+   "dow": 0,
+   "metaId": "m-10-leit-mqapp"
+  },
+  {
+   "id": "t-candidatura-3",
+   "titulo": "Revisar a candidatura completa e enviar",
+   "minutos": 45,
+   "eventoId": "e-candidatura",
+   "disciplinaId": "inter",
+   "semana": 10,
+   "dow": 1,
+   "metaId": "m-10-candidatura"
+  },
+  {
+   "id": "t-leit-hb1-2026-10-14",
+   "titulo": "Ler: PIMENTEL (1995) Viagem ao fundo das consciências (p. 161-194)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-hb-pimentel"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 10,
+   "dow": 1,
+   "metaId": "m-10-leit-hb1"
+  },
+  {
+   "id": "t-leit-pdpp-2026-10-14",
+   "titulo": "Ler: ROSA et al. (2021) p. 23-37 — Atividade 10",
+   "minutos": 45,
+   "leituraIds": [
+    "l-pd-rosa23"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 10,
+   "dow": 1,
+   "metaId": "m-10-leit-pdpp"
+  },
+  {
+   "id": "t-dpp-ante-2",
+   "titulo": "Escolher 3 a 4 textos da disciplina que sustentam o tema",
+   "minutos": 45,
+   "eventoId": "e-dpp-ante",
+   "disciplinaId": "dpp",
+   "semana": 10,
+   "dow": 2,
+   "metaId": "m-10-dpp-ante"
+  },
+  {
+   "id": "t-leit-dpp-2026-10-15",
+   "titulo": "Ler para a aula de 15/10: PHILLIPS + THEODORO + GONZALEZ + Vídeo: CRENSHAW. A urgência da interseccional",
+   "minutos": 125,
+   "leituraIds": [
+    "l-dpp-phillips",
+    "l-dpp-theodoro",
+    "l-dpp-gonzalez",
+    "l-dpp-crenshaw"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 10,
+   "dow": 2,
+   "metaId": "m-10-leit-dpp"
+  },
+  {
+   "id": "t-leit-etica-2026-10-16",
+   "titulo": "Ler: HABERMAS. Para o uso pragmático, ético e moral da razão prática",
+   "minutos": 60,
+   "leituraIds": [
+    "l-etica-habermas"
+   ],
+   "disciplinaId": "etica",
+   "semana": 10,
+   "dow": 3,
+   "metaId": "m-10-leit-etica"
+  },
+  {
+   "id": "t-leit-mqapp-2026-10-20",
+   "titulo": "Ler: Gravetter & Wallnau, cap. 11 — Testes t para amostras relacionadas",
+   "minutos": 75,
+   "leituraIds": [
+    "l-mq-c11"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 10,
+   "dow": 3,
+   "metaId": "m-10-leit-mqapp"
+  },
+  {
+   "id": "t-dpp-ante-3",
+   "titulo": "Escrever objetivos e mapear atores/parceiros",
+   "minutos": 60,
+   "eventoId": "e-dpp-ante",
+   "disciplinaId": "dpp",
+   "semana": 10,
+   "dow": 4,
+   "metaId": "m-10-dpp-ante"
+  },
+  {
+   "id": "t-hb-revisao-3",
+   "titulo": "Ler o artigo 1 e anotar as fontes usadas pelo autor",
+   "minutos": 60,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 10,
+   "dow": 4,
+   "metaId": "m-10-hb-revisao"
+  },
+  {
+   "id": "t-leit-hb1-2026-10-19",
+   "titulo": "Ler: BORGES (2005) Escravos e libertos nas irmandades do Rosário (p. 43-77)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-hb-borges"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 10,
+   "dow": 5,
+   "metaId": "m-10-leit-hb1"
+  },
+  {
+   "id": "t-mq-l3-1",
+   "titulo": "Lista 3: resolver as questões — parte 1 (testes de hipóteses)",
+   "minutos": 60,
+   "eventoId": "e-mq-l3",
+   "disciplinaId": "mqapp",
+   "semana": 10,
+   "dow": 5,
+   "metaId": "m-10-mq-l3"
+  },
+  {
+   "id": "t-tcc-linha-2",
+   "titulo": "Pesquisar rapidamente o que já foi publicado sobre cada tema",
+   "minutos": 60,
+   "eventoId": "e-tcc-linha",
+   "disciplinaId": "tcc",
+   "semana": 10,
+   "dow": 5,
+   "metaId": "m-10-tcc-linha"
+  },
+  {
+   "id": "t-etica-debate-2",
+   "titulo": "Levantar dados e exemplos sobre ética e controle (CGU, TCU, corregedorias, LAI)",
+   "minutos": 60,
+   "eventoId": "e-etica-debate",
+   "disciplinaId": "etica",
+   "semana": 10,
+   "dow": 6,
+   "metaId": "m-10-etica-debate"
+  },
+  {
+   "id": "t-hb-revisao-4",
+   "titulo": "Ler o artigo 2 e anotar as fontes usadas pelo autor",
+   "minutos": 60,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 10,
+   "dow": 6,
+   "metaId": "m-10-hb-revisao"
+  },
+  {
+   "id": "t-leit-pdpp-2026-10-19",
+   "titulo": "Ler: SALVADOR (2010) e INESC (2017) Cartilha Orçamento e Direitos — Atividade 11",
+   "minutos": 75,
+   "leituraIds": [
+    "l-pd-salvador"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 10,
+   "dow": 6,
+   "metaId": "m-10-leit-pdpp"
+  },
+  {
+   "id": "t-rev-2026-10-18",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 10,
+   "dow": 6
+  },
+  {
+   "id": "t-leit-dpp-2026-10-20",
+   "titulo": "Ler para a aula de 20/10: MANIN; PRZEWORSKI; STOKES + LAVALLE; VERA",
+   "minutos": 90,
+   "leituraIds": [
+    "l-dpp-manin",
+    "l-dpp-lavalle"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 11,
+   "dow": 0,
+   "metaId": "m-11-leit-dpp"
+  },
+  {
+   "id": "t-pd-tema-1",
+   "titulo": "Sugerir e alinhar com o grupo a política pública que será analisada",
+   "minutos": 30,
+   "eventoId": "e-pd-tema",
+   "disciplinaId": "pdpp",
+   "semana": 11,
+   "dow": 0,
+   "metaId": "m-11-pd-tema"
+  },
+  {
+   "id": "t-leit-hb1-2026-10-21",
+   "titulo": "Ler: PARÉS (2018) A formação do Candomblé (p. 101-124)",
+   "minutos": 45,
+   "leituraIds": [
+    "l-hb-pares"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 11,
+   "dow": 1,
+   "metaId": "m-11-leit-hb1"
+  },
+  {
+   "id": "t-leit-pdpp-2026-10-21",
+   "titulo": "Ler: SOARES; MACHADO (2018) p. 71-112 — Federalismo (Atividade 12)",
+   "minutos": 75,
+   "leituraIds": [
+    "l-pd-soares"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 11,
+   "dow": 1,
+   "metaId": "m-11-leit-pdpp"
+  },
+  {
+   "id": "t-etica-debate-3",
+   "titulo": "Levantar dados e exemplos — segunda rodada, ligando com as leituras",
+   "minutos": 60,
+   "eventoId": "e-etica-debate",
+   "disciplinaId": "etica",
+   "semana": 11,
+   "dow": 2,
+   "metaId": "m-11-etica-debate"
+  },
+  {
+   "id": "t-leit-mqapp-2026-10-22",
+   "titulo": "Ler: Atividade assíncrona: AmericasBarometer 2026 (USP)",
+   "minutos": 45,
+   "leituraIds": [
+    "l-mq-america"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 11,
+   "dow": 2,
+   "metaId": "m-11-leit-mqapp"
+  },
+  {
+   "id": "t-mq-l3-2",
+   "titulo": "Lista 3: resolver as questões — parte 2 (testes t)",
+   "minutos": 60,
+   "eventoId": "e-mq-l3",
+   "disciplinaId": "mqapp",
+   "semana": 11,
+   "dow": 2,
+   "metaId": "m-11-mq-l3"
+  },
+  {
+   "id": "t-dpp-ante-4",
+   "titulo": "Descrever a coleta (dados secundários e entrevistas) e a análise",
+   "minutos": 60,
+   "eventoId": "e-dpp-ante",
+   "disciplinaId": "dpp",
+   "semana": 11,
+   "dow": 3,
+   "metaId": "m-11-dpp-ante"
+  },
+  {
+   "id": "t-leit-etica-2026-10-23",
+   "titulo": "Ler: RAWLS. Uma Teoria da Justiça — Primeira Parte (cap. 1 a 3)",
+   "minutos": 90,
+   "leituraIds": [
+    "l-etica-rawls"
+   ],
+   "disciplinaId": "etica",
+   "semana": 11,
+   "dow": 3,
+   "metaId": "m-11-leit-etica"
+  },
+  {
+   "id": "t-hb-revisao-5",
+   "titulo": "Ler o artigo 3 e anotar as fontes usadas pelo autor",
+   "minutos": 60,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 11,
+   "dow": 4,
+   "metaId": "m-11-hb-revisao"
+  },
+  {
+   "id": "t-dpp-ante-5",
+   "titulo": "Revisar e finalizar o anteprojeto (3 a 4 páginas)",
+   "minutos": 45,
+   "eventoId": "e-dpp-ante",
+   "disciplinaId": "dpp",
+   "semana": 11,
+   "dow": 5,
+   "metaId": "m-11-dpp-ante"
+  },
+  {
+   "id": "t-mq-p3-1",
+   "titulo": "Revisar a Unidade 3 e montar a folha de consulta (A4 frente e verso)",
+   "minutos": 60,
+   "eventoId": "e-mq-p3",
+   "disciplinaId": "mqapp",
+   "semana": 11,
+   "dow": 5,
+   "metaId": "m-11-mq-p3"
+  },
+  {
+   "id": "t-tcc-linha-3",
+   "titulo": "Conversar com um(a) professor(a) ou colega sobre os temas",
+   "minutos": 30,
+   "eventoId": "e-tcc-linha",
+   "disciplinaId": "tcc",
+   "semana": 11,
+   "dow": 5,
+   "metaId": "m-11-tcc-linha"
+  },
+  {
+   "id": "t-etica-debate-4",
+   "titulo": "Montar o roteiro do debate e as perguntas para a turma",
+   "minutos": 45,
+   "eventoId": "e-etica-debate",
+   "disciplinaId": "etica",
+   "semana": 11,
+   "dow": 6,
+   "metaId": "m-11-etica-debate"
+  },
+  {
+   "id": "t-leit-pdpp-2026-10-26",
+   "titulo": "Ler: Política Nacional de Recursos Hídricos (itens para discussão em sala)",
+   "minutos": 45,
+   "leituraIds": [
+    "l-pd-pnrh"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 11,
+   "dow": 6,
+   "metaId": "m-11-leit-pdpp"
+  },
+  {
+   "id": "t-mq-p3-2",
+   "titulo": "Refazer exercícios da lista e exemplos das aulas",
+   "minutos": 60,
+   "eventoId": "e-mq-p3",
+   "disciplinaId": "mqapp",
+   "semana": 11,
+   "dow": 6,
+   "metaId": "m-11-mq-p3"
+  },
+  {
+   "id": "t-rev-2026-10-25",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 11,
+   "dow": 6
+  },
+  {
+   "id": "t-leit-dpp-2026-10-27",
+   "titulo": "Ler para a aula de 27/10: COHEN; FUNG + BORBA; LÜCHMANN. A representação política nos",
+   "minutos": 60,
+   "leituraIds": [
+    "l-dpp-cohen",
+    "l-dpp-borba"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 12,
+   "dow": 0,
+   "metaId": "m-12-leit-dpp"
+  },
+  {
+   "id": "t-mq-l3-3",
+   "titulo": "Lista 3: conferir respostas e passar a limpo",
+   "minutos": 30,
+   "eventoId": "e-mq-l3",
+   "disciplinaId": "mqapp",
+   "semana": 12,
+   "dow": 0,
+   "metaId": "m-12-mq-l3"
+  },
+  {
+   "id": "t-hb-revisao-6",
+   "titulo": "Escrever a introdução ao tema e as fontes do artigo 1",
+   "minutos": 60,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 12,
+   "dow": 1,
+   "metaId": "m-12-hb-revisao"
+  },
+  {
+   "id": "t-mq-p3-3",
+   "titulo": "Simulado: questões de múltipla escolha",
+   "minutos": 45,
+   "eventoId": "e-mq-p3",
+   "disciplinaId": "mqapp",
+   "semana": 12,
+   "dow": 1,
+   "metaId": "m-12-mq-p3"
+  },
+  {
+   "id": "t-etica-debate-5",
+   "titulo": "Ensaiar o debate com o grupo",
+   "minutos": 30,
+   "eventoId": "e-etica-debate",
+   "disciplinaId": "etica",
+   "semana": 12,
+   "dow": 2,
+   "metaId": "m-12-etica-debate"
+  },
+  {
+   "id": "t-leit-dpp-2026-10-29",
+   "titulo": "Ler para a aula de 29/10: DOWBOR; CARLOS; ALBUQUERQUE + ABERS; SERAFIM; TATAGIBA",
+   "minutos": 90,
+   "leituraIds": [
+    "l-dpp-dowbor",
+    "l-dpp-abers"
+   ],
+   "disciplinaId": "dpp",
+   "semana": 12,
+   "dow": 2,
+   "metaId": "m-12-leit-dpp"
+  },
+  {
+   "id": "t-leit-etica-2026-10-30",
+   "titulo": "Ler: FOUCAULT. Ética, sexualidade, política, vol. V (tema do meu debate)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-etica-foucault"
+   ],
+   "disciplinaId": "etica",
+   "semana": 12,
+   "dow": 3,
+   "metaId": "m-12-leit-etica"
+  },
+  {
+   "id": "t-tcc-linha-4",
+   "titulo": "Escolher a linha de pesquisa e escrever a pergunta inicial",
+   "minutos": 60,
+   "eventoId": "e-tcc-linha",
+   "disciplinaId": "tcc",
+   "semana": 12,
+   "dow": 3,
+   "metaId": "m-12-tcc-linha"
+  },
+  {
+   "id": "t-hb-revisao-7",
+   "titulo": "Escrever introdução e fontes dos artigos 2 e 3",
+   "minutos": 75,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 12,
+   "dow": 4,
+   "metaId": "m-12-hb-revisao"
+  },
+  {
+   "id": "t-pd-previa-1",
+   "titulo": "Ler o roteiro do trabalho e dividir as tarefas no grupo",
+   "minutos": 30,
+   "eventoId": "e-pd-previa",
+   "disciplinaId": "pdpp",
+   "semana": 12,
+   "dow": 4,
+   "metaId": "m-12-pd-previa"
+  },
+  {
+   "id": "t-dpp-proj-1",
+   "titulo": "Ler o retorno do anteprojeto e dividir as seções com o grupo",
+   "minutos": 30,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 12,
+   "dow": 5,
+   "metaId": "m-12-dpp-proj"
+  },
+  {
+   "id": "t-etica-relatorio-1",
+   "titulo": "Escrever o relatório sobre o que foi discutido no debate",
+   "minutos": 60,
+   "eventoId": "e-etica-relatorio",
+   "disciplinaId": "etica",
+   "semana": 12,
+   "dow": 5,
+   "metaId": "m-12-etica-relatorio"
+  },
+  {
+   "id": "t-hb-revisao-8",
+   "titulo": "Escrever o texto de conexão entre os 3 artigos e revisar",
+   "minutos": 60,
+   "eventoId": "e-hb-revisao",
+   "disciplinaId": "hb1",
+   "semana": 12,
+   "dow": 5,
+   "metaId": "m-12-hb-revisao"
+  },
+  {
+   "id": "t-leit-mqapp-2026-11-03",
+   "titulo": "Ler: Gravetter & Wallnau, cap. 15 (exceto seção 15.5) — Correlação",
+   "minutos": 75,
+   "leituraIds": [
+    "l-mq-c15"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 12,
+   "dow": 6,
+   "metaId": "m-12-leit-mqapp"
+  },
+  {
+   "id": "t-pd-previa-2",
+   "titulo": "Pesquisar o instrumento (lei, plano ou programa) e reunir os documentos",
+   "minutos": 60,
+   "eventoId": "e-pd-previa",
+   "disciplinaId": "pdpp",
+   "semana": 12,
+   "dow": 6,
+   "metaId": "m-12-pd-previa"
+  },
+  {
+   "id": "t-rev-2026-11-01",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 12,
+   "dow": 6
+  },
+  {
+   "id": "t-dpp-proj-2",
+   "titulo": "Escrever a introdução (contexto, problema, objetivos, justificativa)",
+   "minutos": 75,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 13,
+   "dow": 0,
+   "metaId": "m-13-dpp-proj"
+  },
+  {
+   "id": "t-leit-pdpp-2026-11-04",
+   "titulo": "Ler: BONOTTO et al. (2018) — A sustentabilidade como um wicked problem (Atividade 13)",
+   "minutos": 45,
+   "leituraIds": [
+    "l-pd-bonotto"
+   ],
+   "disciplinaId": "pdpp",
+   "semana": 13,
+   "dow": 1,
+   "metaId": "m-13-leit-pdpp"
+  },
+  {
+   "id": "t-tcc-refs-1",
+   "titulo": "Buscar 3 a 5 referências centrais sobre o tema",
+   "minutos": 45,
+   "eventoId": "e-tcc-refs",
+   "disciplinaId": "tcc",
+   "semana": 13,
+   "dow": 1,
+   "metaId": "m-13-tcc-refs"
+  },
+  {
+   "id": "t-dpp-proj-3",
+   "titulo": "Escrever o referencial teórico",
+   "minutos": 75,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 13,
+   "dow": 2,
+   "metaId": "m-13-dpp-proj"
+  },
+  {
+   "id": "t-etica-relatorio-2",
+   "titulo": "Revisar e enviar o relatório por e-mail",
+   "minutos": 30,
+   "eventoId": "e-etica-relatorio",
+   "disciplinaId": "etica",
+   "semana": 13,
+   "dow": 3,
+   "metaId": "m-13-etica-relatorio"
+  },
+  {
+   "id": "t-leit-etica-2026-11-06",
+   "titulo": "Ler: PATEMAN. O contrato sexual (cap. 1 e 2)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-etica-pateman"
+   ],
+   "disciplinaId": "etica",
+   "semana": 13,
+   "dow": 3,
+   "metaId": "m-13-leit-etica"
+  },
+  {
+   "id": "t-etica-tema-1",
+   "titulo": "Escolher o tema da prova escrita (ligado à bibliografia)",
+   "minutos": 45,
+   "eventoId": "e-etica-tema",
+   "disciplinaId": "etica",
+   "semana": 13,
+   "dow": 4,
+   "metaId": "m-13-etica-tema"
+  },
+  {
+   "id": "t-pd-previa-3",
+   "titulo": "Analisar o instrumento com base no roteiro — parte 1",
+   "minutos": 60,
+   "eventoId": "e-pd-previa",
+   "disciplinaId": "pdpp",
+   "semana": 13,
+   "dow": 4,
+   "metaId": "m-13-pd-previa"
+  },
+  {
+   "id": "t-dpp-proj-4",
+   "titulo": "Escrever os procedimentos de coleta e análise de dados",
+   "minutos": 60,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 13,
+   "dow": 5,
+   "metaId": "m-13-dpp-proj"
+  },
+  {
+   "id": "t-tcc-refs-2",
+   "titulo": "Ler e fichar a referência 1",
+   "minutos": 60,
+   "eventoId": "e-tcc-refs",
+   "disciplinaId": "tcc",
+   "semana": 13,
+   "dow": 5,
+   "metaId": "m-13-tcc-refs"
+  },
+  {
+   "id": "t-leit-mqapp-2026-11-10",
+   "titulo": "Ler: Gravetter & Wallnau, cap. 16 (p. 529-537, 544-545 e 551-552) — Regressão",
+   "minutos": 60,
+   "leituraIds": [
+    "l-mq-c16"
+   ],
+   "disciplinaId": "mqapp",
+   "semana": 13,
+   "dow": 6,
+   "metaId": "m-13-leit-mqapp"
+  },
+  {
+   "id": "t-pd-previa-4",
+   "titulo": "Analisar o instrumento com base no roteiro — parte 2",
+   "minutos": 60,
+   "eventoId": "e-pd-previa",
+   "disciplinaId": "pdpp",
+   "semana": 13,
+   "dow": 6,
+   "metaId": "m-13-pd-previa"
+  },
+  {
+   "id": "t-rev-2026-11-08",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 13,
+   "dow": 6
+  },
+  {
+   "id": "t-dpp-proj-5",
+   "titulo": "Descrever a questão pública investigada",
+   "minutos": 60,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 14,
+   "dow": 0,
+   "metaId": "m-14-dpp-proj"
+  },
+  {
+   "id": "t-leit-hb1-2026-11-11",
+   "titulo": "Ler: VAINFAS (2010) Trópico dos pecados (p. 147-189)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-hb-vainfas1"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 14,
+   "dow": 1,
+   "metaId": "m-14-leit-hb1"
+  },
+  {
+   "id": "t-dpp-proj-6",
+   "titulo": "Escrever a proposta de ação e os resultados esperados",
+   "minutos": 60,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 14,
+   "dow": 2,
+   "metaId": "m-14-dpp-proj"
+  },
+  {
+   "id": "t-tcc-refs-3",
+   "titulo": "Ler e fichar a referência 2",
+   "minutos": 60,
+   "eventoId": "e-tcc-refs",
+   "disciplinaId": "tcc",
+   "semana": 14,
+   "dow": 2,
+   "metaId": "m-14-tcc-refs"
+  },
+  {
+   "id": "t-etica-tema-2",
+   "titulo": "Separar 3 a 4 textos da bibliografia para sustentar o tema",
+   "minutos": 60,
+   "eventoId": "e-etica-tema",
+   "disciplinaId": "etica",
+   "semana": 14,
+   "dow": 3,
+   "metaId": "m-14-etica-tema"
+  },
+  {
+   "id": "t-leit-etica-2026-11-13",
+   "titulo": "Ler: MILLS. The Racial Contract (Introdução e cap. 1) — em inglês",
+   "minutos": 60,
+   "leituraIds": [
+    "l-etica-mills"
+   ],
+   "disciplinaId": "etica",
+   "semana": 14,
+   "dow": 3,
+   "metaId": "m-14-leit-etica"
+  },
+  {
+   "id": "t-dpp-proj-7",
+   "titulo": "Revisar o texto inteiro e as referências",
+   "minutos": 60,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 14,
+   "dow": 4,
+   "metaId": "m-14-dpp-proj"
+  },
+  {
+   "id": "t-pd-previa-5",
+   "titulo": "Preparar a prévia do trabalho (slides curtos)",
+   "minutos": 60,
+   "eventoId": "e-pd-previa",
+   "disciplinaId": "pdpp",
+   "semana": 14,
+   "dow": 4,
+   "metaId": "m-14-pd-previa"
+  },
+  {
+   "id": "t-mq-l4-1",
+   "titulo": "Lista 4: resolver as questões — parte 1 (correlação)",
+   "minutos": 60,
+   "eventoId": "e-mq-l4",
+   "disciplinaId": "mqapp",
+   "semana": 14,
+   "dow": 5,
+   "metaId": "m-14-mq-l4"
+  },
+  {
+   "id": "t-tcc-refs-4",
+   "titulo": "Ler e fichar a referência 3",
+   "minutos": 60,
+   "eventoId": "e-tcc-refs",
+   "disciplinaId": "tcc",
+   "semana": 14,
+   "dow": 5,
+   "metaId": "m-14-tcc-refs"
+  },
+  {
+   "id": "t-etica-prova-1",
+   "titulo": "Escrever introdução e primeira parte do desenvolvimento",
+   "minutos": 90,
+   "eventoId": "e-etica-prova",
+   "disciplinaId": "etica",
+   "semana": 14,
+   "dow": 6,
+   "metaId": "m-14-etica-prova"
+  },
+  {
+   "id": "t-leit-hb1-2026-11-16",
+   "titulo": "Ler: BRAZ (2018) Baltasar da Lomba (monografia sobre sodomia e Inquisição)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-hb-braz"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 14,
+   "dow": 6,
+   "metaId": "m-14-leit-hb1"
+  },
+  {
+   "id": "t-rev-2026-11-15",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 14,
+   "dow": 6
+  },
+  {
+   "id": "t-dpp-proj-8",
+   "titulo": "Montar os slides e ensaiar a apresentação",
+   "minutos": 60,
+   "eventoId": "e-dpp-proj",
+   "disciplinaId": "dpp",
+   "semana": 15,
+   "dow": 0,
+   "metaId": "m-15-dpp-proj"
+  },
+  {
+   "id": "t-hb-planos-1",
+   "titulo": "Escolher os 2 eixos/textos que viram planos de aula",
+   "minutos": 30,
+   "eventoId": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "semana": 15,
+   "dow": 0,
+   "metaId": "m-15-hb-planos"
+  },
+  {
+   "id": "t-etica-prova-2",
+   "titulo": "Escrever o restante do desenvolvimento e as considerações finais",
+   "minutos": 90,
+   "eventoId": "e-etica-prova",
+   "disciplinaId": "etica",
+   "semana": 15,
+   "dow": 1,
+   "metaId": "m-15-etica-prova"
+  },
+  {
+   "id": "t-leit-hb1-2026-11-18",
+   "titulo": "Ler: FRANCO (2016) Discriminação e abandono de recém-nascidos mestiços",
+   "minutos": 45,
+   "leituraIds": [
+    "l-hb-franco"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 15,
+   "dow": 1,
+   "metaId": "m-15-leit-hb1"
+  },
+  {
+   "id": "t-mq-l4-2",
+   "titulo": "Lista 4: resolver as questões — parte 2 (regressão)",
+   "minutos": 60,
+   "eventoId": "e-mq-l4",
+   "disciplinaId": "mqapp",
+   "semana": 15,
+   "dow": 2,
+   "metaId": "m-15-mq-l4"
+  },
+  {
+   "id": "t-pd-final-1",
+   "titulo": "Ajustar o trabalho com o retorno da prévia",
+   "minutos": 60,
+   "eventoId": "e-pd-final",
+   "disciplinaId": "pdpp",
+   "semana": 15,
+   "dow": 2,
+   "metaId": "m-15-pd-final"
+  },
+  {
+   "id": "t-etica-prova-3",
+   "titulo": "Revisar formatação (Times 12, espaçamento 1,5), bibliografia e anexos",
+   "minutos": 45,
+   "eventoId": "e-etica-prova",
+   "disciplinaId": "etica",
+   "semana": 15,
+   "dow": 3,
+   "metaId": "m-15-etica-prova"
+  },
+  {
+   "id": "t-hb-planos-2",
+   "titulo": "Plano de aula 1: objetivos e atividade diferenciada (não só expositiva)",
+   "minutos": 75,
+   "eventoId": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "semana": 15,
+   "dow": 3,
+   "metaId": "m-15-hb-planos"
+  },
+  {
+   "id": "t-tcc-refs-5",
+   "titulo": "Resumir o que aprendi e a lacuna que a pesquisa pode cobrir",
+   "minutos": 45,
+   "eventoId": "e-tcc-refs",
+   "disciplinaId": "tcc",
+   "semana": 15,
+   "dow": 3,
+   "metaId": "m-15-tcc-refs"
+  },
+  {
+   "id": "t-fixo-etica-envio",
+   "titulo": "Enviar a prova escrita por e-mail (até 23h)",
+   "minutos": 15,
+   "eventoId": "e-etica-prova",
+   "hora": "até 23h",
+   "disciplinaId": "etica",
+   "semana": 15,
+   "dow": 4,
+   "metaId": "m-15-etica-prova"
+  },
+  {
+   "id": "t-mq-p4-1",
+   "titulo": "Revisar a Unidade 4 e montar a folha de consulta",
+   "minutos": 60,
+   "eventoId": "e-mq-p4",
+   "disciplinaId": "mqapp",
+   "semana": 15,
+   "dow": 4,
+   "metaId": "m-15-mq-p4"
+  },
+  {
+   "id": "t-hb-planos-3",
+   "titulo": "Plano de aula 1: revisar",
+   "minutos": 30,
+   "eventoId": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "semana": 15,
+   "dow": 5,
+   "metaId": "m-15-hb-planos"
+  },
+  {
+   "id": "t-pd-final-2",
+   "titulo": "Escrever a versão final — parte 1",
+   "minutos": 75,
+   "eventoId": "e-pd-final",
+   "disciplinaId": "pdpp",
+   "semana": 15,
+   "dow": 5,
+   "metaId": "m-15-pd-final"
+  },
+  {
+   "id": "t-leit-hb1-2026-11-23",
+   "titulo": "Ler: VAINFAS (2014) Tempo dos Flamengos (p. 227-265)",
+   "minutos": 60,
+   "leituraIds": [
+    "l-hb-vainfas2"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 15,
+   "dow": 6,
+   "metaId": "m-15-leit-hb1"
+  },
+  {
+   "id": "t-mq-p4-2",
+   "titulo": "Praticar interpretação de regressão e correlação",
+   "minutos": 60,
+   "eventoId": "e-mq-p4",
+   "disciplinaId": "mqapp",
+   "semana": 15,
+   "dow": 6,
+   "metaId": "m-15-mq-p4"
+  },
+  {
+   "id": "t-rev-2026-11-22",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 15,
+   "dow": 6
+  },
+  {
+   "id": "t-mq-l4-3",
+   "titulo": "Lista 4: conferir respostas e passar a limpo",
+   "minutos": 30,
+   "eventoId": "e-mq-l4",
+   "disciplinaId": "mqapp",
+   "semana": 16,
+   "dow": 0,
+   "metaId": "m-16-mq-l4"
+  },
+  {
+   "id": "t-pd-final-3",
+   "titulo": "Escrever a versão final — parte 2",
+   "minutos": 75,
+   "eventoId": "e-pd-final",
+   "disciplinaId": "pdpp",
+   "semana": 16,
+   "dow": 0,
+   "metaId": "m-16-pd-final"
+  },
+  {
+   "id": "t-leit-hb1-2026-11-25",
+   "titulo": "Ler: HONOR (2019) Santa Teresa e os fundadores (iconologia da pintura)",
+   "minutos": 45,
+   "leituraIds": [
+    "l-hb-honor"
+   ],
+   "disciplinaId": "hb1",
+   "semana": 16,
+   "dow": 1,
+   "metaId": "m-16-leit-hb1"
+  },
+  {
+   "id": "t-hb-planos-4",
+   "titulo": "Plano de aula 2: objetivos e atividade diferenciada",
+   "minutos": 75,
+   "eventoId": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "semana": 16,
+   "dow": 2,
+   "metaId": "m-16-hb-planos"
+  },
+  {
+   "id": "t-mq-p4-3",
+   "titulo": "Simulado: questões de múltipla escolha",
+   "minutos": 45,
+   "eventoId": "e-mq-p4",
+   "disciplinaId": "mqapp",
+   "semana": 16,
+   "dow": 2,
+   "metaId": "m-16-mq-p4"
+  },
+  {
+   "id": "t-pd-final-4",
+   "titulo": "Revisar e postar no Teams (até 27/11)",
+   "minutos": 45,
+   "eventoId": "e-pd-final",
+   "disciplinaId": "pdpp",
+   "semana": 16,
+   "dow": 3,
+   "metaId": "m-16-pd-final"
+  },
+  {
+   "id": "t-hb-planos-5",
+   "titulo": "Plano de aula 2: revisar",
+   "minutos": 30,
+   "eventoId": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "semana": 16,
+   "dow": 5,
+   "metaId": "m-16-hb-planos"
+  },
+  {
+   "id": "t-tcc-esq-1",
+   "titulo": "Definir problema, pergunta e objetivos do TCC",
+   "minutos": 60,
+   "eventoId": "e-tcc-esq",
+   "disciplinaId": "tcc",
+   "semana": 16,
+   "dow": 5,
+   "metaId": "m-16-tcc-esq"
+  },
+  {
+   "id": "t-hb-planos-6",
+   "titulo": "Ensaiar a apresentação dos planos",
+   "minutos": 30,
+   "eventoId": "e-hb-planos",
+   "disciplinaId": "hb1",
+   "semana": 16,
+   "dow": 6,
+   "metaId": "m-16-hb-planos"
+  },
+  {
+   "id": "t-pd-apres-1",
+   "titulo": "Montar os slides e ensaiar a apresentação final",
+   "minutos": 60,
+   "eventoId": "e-pd-apres",
+   "disciplinaId": "pdpp",
+   "semana": 16,
+   "dow": 6,
+   "metaId": "m-16-pd-apres"
+  },
+  {
+   "id": "t-rev-2026-11-29",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 16,
+   "dow": 6
+  },
+  {
+   "id": "t-mq-final-1",
+   "titulo": "Revisar Unidades 1 e 2 e atualizar a folha de consulta",
+   "minutos": 60,
+   "eventoId": "e-mq-final",
+   "disciplinaId": "mqapp",
+   "semana": 17,
+   "dow": 0,
+   "metaId": "m-17-mq-final"
+  },
+  {
+   "id": "t-hb-prova-1",
+   "titulo": "Revisar eixos I e II (indígenas; política e economia)",
+   "minutos": 60,
+   "eventoId": "e-hb-prova",
+   "disciplinaId": "hb1",
+   "semana": 17,
+   "dow": 1,
+   "metaId": "m-17-hb-prova"
+  },
+  {
+   "id": "t-mq-final-2",
+   "titulo": "Revisar Unidades 3 e 4",
+   "minutos": 60,
+   "eventoId": "e-mq-final",
+   "disciplinaId": "mqapp",
+   "semana": 17,
+   "dow": 1,
+   "metaId": "m-17-mq-final"
+  },
+  {
+   "id": "t-mq-final-3",
+   "titulo": "Simulado geral",
+   "minutos": 45,
+   "eventoId": "e-mq-final",
+   "disciplinaId": "mqapp",
+   "semana": 17,
+   "dow": 2,
+   "metaId": "m-17-mq-final"
+  },
+  {
+   "id": "t-hb-prova-2",
+   "titulo": "Revisar eixos III e IV (escravização; religiosidades)",
+   "minutos": 60,
+   "eventoId": "e-hb-prova",
+   "disciplinaId": "hb1",
+   "semana": 17,
+   "dow": 3,
+   "metaId": "m-17-hb-prova"
+  },
+  {
+   "id": "t-hb-prova-3",
+   "titulo": "Revisar eixos V a VII (sociedade; arte; intérpretes do Brasil)",
+   "minutos": 60,
+   "eventoId": "e-hb-prova",
+   "disciplinaId": "hb1",
+   "semana": 17,
+   "dow": 4,
+   "metaId": "m-17-hb-prova"
+  },
+  {
+   "id": "t-tcc-esq-2",
+   "titulo": "Esboçar justificativa e metodologia",
+   "minutos": 60,
+   "eventoId": "e-tcc-esq",
+   "disciplinaId": "tcc",
+   "semana": 17,
+   "dow": 5,
+   "metaId": "m-17-tcc-esq"
+  },
+  {
+   "id": "t-hb-prova-4",
+   "titulo": "Montar a folha de anotações (30 min de consulta)",
+   "minutos": 45,
+   "eventoId": "e-hb-prova",
+   "disciplinaId": "hb1",
+   "semana": 17,
+   "dow": 6,
+   "metaId": "m-17-hb-prova"
+  },
+  {
+   "id": "t-rev-2026-12-06",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 17,
+   "dow": 6
+  },
+  {
+   "id": "t-mq-part2-1",
+   "titulo": "Fazer o Exercício de participação 2 (assíncrono)",
+   "minutos": 45,
+   "eventoId": "e-mq-part2",
+   "disciplinaId": "mqapp",
+   "semana": 18,
+   "dow": 0,
+   "metaId": "m-18-mq-part2"
+  },
+  {
+   "id": "t-hb-prova-5",
+   "titulo": "Simulado: responder questões sem consultar",
+   "minutos": 60,
+   "eventoId": "e-hb-prova",
+   "disciplinaId": "hb1",
+   "semana": 18,
+   "dow": 1,
+   "metaId": "m-18-hb-prova"
+  },
+  {
+   "id": "t-tcc-esq-3",
+   "titulo": "Montar o esqueleto do pré-projeto (tópicos)",
+   "minutos": 60,
+   "eventoId": "e-tcc-esq",
+   "disciplinaId": "tcc",
+   "semana": 18,
+   "dow": 2,
+   "metaId": "m-18-tcc-esq"
+  },
+  {
+   "id": "t-tcc-esq-4",
+   "titulo": "Revisar o esqueleto e listar dúvidas para conversar com orientador(a)",
+   "minutos": 45,
+   "eventoId": "e-tcc-esq",
+   "disciplinaId": "tcc",
+   "semana": 18,
+   "dow": 5,
+   "metaId": "m-18-tcc-esq"
+  },
+  {
+   "id": "t-rev-2026-12-13",
+   "titulo": "Revisar a semana: conferir metas, atrasos e planejar a próxima",
+   "minutos": 15,
+   "disciplinaId": "geral",
+   "semana": 18,
+   "dow": 6
+  }
+ ],
+ "topicos": [
+  {
+   "id": "tp-mqapp-1",
+   "disciplinaId": "mqapp",
+   "titulo": "Estatística descritiva e mensuração"
+  },
+  {
+   "id": "tp-mqapp-2",
+   "disciplinaId": "mqapp",
+   "titulo": "Distribuições de frequência"
+  },
+  {
+   "id": "tp-mqapp-3",
+   "disciplinaId": "mqapp",
+   "titulo": "Medidas de tendência central"
+  },
+  {
+   "id": "tp-mqapp-4",
+   "disciplinaId": "mqapp",
+   "titulo": "Variabilidade"
+  },
+  {
+   "id": "tp-mqapp-5",
+   "disciplinaId": "mqapp",
+   "titulo": "Probabilidade"
+  },
+  {
+   "id": "tp-mqapp-6",
+   "disciplinaId": "mqapp",
+   "titulo": "Probabilidade e amostras"
+  },
+  {
+   "id": "tp-mqapp-7",
+   "disciplinaId": "mqapp",
+   "titulo": "Testes de hipóteses"
+  },
+  {
+   "id": "tp-mqapp-8",
+   "disciplinaId": "mqapp",
+   "titulo": "Testes t (uma amostra)"
+  },
+  {
+   "id": "tp-mqapp-9",
+   "disciplinaId": "mqapp",
+   "titulo": "Intervalos de confiança"
+  },
+  {
+   "id": "tp-mqapp-10",
+   "disciplinaId": "mqapp",
+   "titulo": "Testes t para duas amostras"
+  },
+  {
+   "id": "tp-mqapp-11",
+   "disciplinaId": "mqapp",
+   "titulo": "Testes t para amostras relacionadas"
+  },
+  {
+   "id": "tp-mqapp-12",
+   "disciplinaId": "mqapp",
+   "titulo": "Correlação"
+  },
+  {
+   "id": "tp-mqapp-13",
+   "disciplinaId": "mqapp",
+   "titulo": "Regressão linear"
+  },
+  {
+   "id": "tp-dpp-1",
+   "disciplinaId": "dpp",
+   "titulo": "Conceitos de democracia (Benevides; Santos e Avritzer)"
+  },
+  {
+   "id": "tp-dpp-2",
+   "disciplinaId": "dpp",
+   "titulo": "Problemas públicos e arenas públicas"
+  },
+  {
+   "id": "tp-dpp-3",
+   "disciplinaId": "dpp",
+   "titulo": "Direitos sociais e gestão democrática"
+  },
+  {
+   "id": "tp-dpp-4",
+   "disciplinaId": "dpp",
+   "titulo": "Capacidade estatal e democracia"
+  },
+  {
+   "id": "tp-dpp-5",
+   "disciplinaId": "dpp",
+   "titulo": "Gestão deliberativa"
+  },
+  {
+   "id": "tp-dpp-6",
+   "disciplinaId": "dpp",
+   "titulo": "Projetos políticos e sociedade civil"
+  },
+  {
+   "id": "tp-dpp-7",
+   "disciplinaId": "dpp",
+   "titulo": "Representação, redistribuição e reconhecimento (Fraser)"
+  },
+  {
+   "id": "tp-dpp-8",
+   "disciplinaId": "dpp",
+   "titulo": "Igualdade racial e de gênero"
+  },
+  {
+   "id": "tp-dpp-9",
+   "disciplinaId": "dpp",
+   "titulo": "A democracia representativa e seus limites"
+  },
+  {
+   "id": "tp-dpp-10",
+   "disciplinaId": "dpp",
+   "titulo": "Entre a participação e a deliberação"
+  },
+  {
+   "id": "tp-dpp-11",
+   "disciplinaId": "dpp",
+   "titulo": "Práticas movimentistas e interação socioestatal"
+  },
+  {
+   "id": "tp-dpp-12",
+   "disciplinaId": "dpp",
+   "titulo": "Pesquisa-ação"
+  },
+  {
+   "id": "tp-etica-1",
+   "disciplinaId": "etica",
+   "titulo": "Bobbio: ética e política"
+  },
+  {
+   "id": "tp-etica-2",
+   "disciplinaId": "etica",
+   "titulo": "Aristóteles: ética e política"
+  },
+  {
+   "id": "tp-etica-3",
+   "disciplinaId": "etica",
+   "titulo": "Maquiavel: O príncipe"
+  },
+  {
+   "id": "tp-etica-4",
+   "disciplinaId": "etica",
+   "titulo": "Kant: o que é esclarecimento"
+  },
+  {
+   "id": "tp-etica-5",
+   "disciplinaId": "etica",
+   "titulo": "Montesquieu: corrupção dos princípios"
+  },
+  {
+   "id": "tp-etica-6",
+   "disciplinaId": "etica",
+   "titulo": "Mill: utilitarismo"
+  },
+  {
+   "id": "tp-etica-7",
+   "disciplinaId": "etica",
+   "titulo": "Weber: a política como vocação"
+  },
+  {
+   "id": "tp-etica-8",
+   "disciplinaId": "etica",
+   "titulo": "Arendt: política e violência"
+  },
+  {
+   "id": "tp-etica-9",
+   "disciplinaId": "etica",
+   "titulo": "Habermas: razão prática"
+  },
+  {
+   "id": "tp-etica-10",
+   "disciplinaId": "etica",
+   "titulo": "Rawls: teoria da justiça"
+  },
+  {
+   "id": "tp-etica-11",
+   "disciplinaId": "etica",
+   "titulo": "Foucault: ética e poder"
+  },
+  {
+   "id": "tp-etica-12",
+   "disciplinaId": "etica",
+   "titulo": "Pateman: contrato sexual"
+  },
+  {
+   "id": "tp-etica-13",
+   "disciplinaId": "etica",
+   "titulo": "Mills: contrato racial"
+  },
+  {
+   "id": "tp-hb1-1",
+   "disciplinaId": "hb1",
+   "titulo": "Gênero, raça e classe (Hooks; Gonzalez)"
+  },
+  {
+   "id": "tp-hb1-2",
+   "disciplinaId": "hb1",
+   "titulo": "Indígenas e colonização"
+  },
+  {
+   "id": "tp-hb1-3",
+   "disciplinaId": "hb1",
+   "titulo": "Política e economia na América portuguesa"
+  },
+  {
+   "id": "tp-hb1-4",
+   "disciplinaId": "hb1",
+   "titulo": "Escravização de africanos nos trópicos"
+  },
+  {
+   "id": "tp-hb1-5",
+   "disciplinaId": "hb1",
+   "titulo": "Religiosidades (irmandades, candomblé)"
+  },
+  {
+   "id": "tp-hb1-6",
+   "disciplinaId": "hb1",
+   "titulo": "Sociedade: moral, sexualidade e mestiçagem"
+  },
+  {
+   "id": "tp-hb1-7",
+   "disciplinaId": "hb1",
+   "titulo": "Domínio holandês"
+  },
+  {
+   "id": "tp-hb1-8",
+   "disciplinaId": "hb1",
+   "titulo": "Arte na América portuguesa"
+  },
+  {
+   "id": "tp-hb1-9",
+   "disciplinaId": "hb1",
+   "titulo": "Intérpretes do Brasil"
+  },
+  {
+   "id": "tp-pdpp-1",
+   "disciplinaId": "pdpp",
+   "titulo": "A decisão política (Lindblom)"
+  },
+  {
+   "id": "tp-pdpp-2",
+   "disciplinaId": "pdpp",
+   "titulo": "Tomada de decisão e modelos conceituais"
+  },
+  {
+   "id": "tp-pdpp-3",
+   "disciplinaId": "pdpp",
+   "titulo": "Problema público"
+  },
+  {
+   "id": "tp-pdpp-4",
+   "disciplinaId": "pdpp",
+   "titulo": "Agenda"
+  },
+  {
+   "id": "tp-pdpp-5",
+   "disciplinaId": "pdpp",
+   "titulo": "Definição de alternativas"
+  },
+  {
+   "id": "tp-pdpp-6",
+   "disciplinaId": "pdpp",
+   "titulo": "Instrumentos de políticas públicas"
+  },
+  {
+   "id": "tp-pdpp-7",
+   "disciplinaId": "pdpp",
+   "titulo": "Grupos de interesse na formulação"
+  },
+  {
+   "id": "tp-pdpp-8",
+   "disciplinaId": "pdpp",
+   "titulo": "Processo orçamentário e PPA"
+  },
+  {
+   "id": "tp-pdpp-9",
+   "disciplinaId": "pdpp",
+   "titulo": "Federalismo e políticas públicas"
+  },
+  {
+   "id": "tp-pdpp-10",
+   "disciplinaId": "pdpp",
+   "titulo": "Wicked problems"
+  },
+  {
+   "id": "tp-pdpp-11",
+   "disciplinaId": "pdpp",
+   "titulo": "Decisão na assistência social"
+  },
+  {
+   "id": "tp-pdpp-12",
+   "disciplinaId": "pdpp",
+   "titulo": "Políticas para povos indígenas"
+  }
+ ],
+ "compromissos": [
+  {
+   "dow": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "hora": "08:00",
+   "titulo": "Aula de inglês"
+  },
+  {
+   "dow": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "hora": "09:00–18:00",
+   "titulo": "Trabalho — Volpatti Advogados"
+  },
+  {
+   "dow": [
+    0,
+    2
+   ],
+   "hora": "19:00–20:40",
+   "titulo": "Processo Decisório e Políticas Públicas",
+   "disciplinaId": "pdpp",
+   "ate": "2026-12-14",
+   "semAula": [
+    "2026-10-12",
+    "2026-10-28",
+    "2026-11-02"
+   ]
+  },
+  {
+   "dow": [
+    0,
+    2
+   ],
+   "hora": "20:50–22:30",
+   "titulo": "História do Brasil 1",
+   "disciplinaId": "hb1",
+   "ate": "2026-12-14",
+   "semAula": [
+    "2026-10-05",
+    "2026-10-07",
+    "2026-10-12",
+    "2026-10-26",
+    "2026-10-28",
+    "2026-11-02"
+   ]
+  },
+  {
+   "dow": [
+    1,
+    3
+   ],
+   "hora": "19:00–20:40",
+   "titulo": "Métodos Quantitativos",
+   "disciplinaId": "mqapp",
+   "ate": "2026-12-08",
+   "semAula": [
+    "2026-09-29",
+    "2026-10-01"
+   ]
+  },
+  {
+   "dow": [
+    1,
+    3
+   ],
+   "hora": "20:50–22:30",
+   "titulo": "Democracia e Políticas Públicas",
+   "disciplinaId": "dpp",
+   "ate": "2026-11-19"
+  },
+  {
+   "dow": [
+    4
+   ],
+   "hora": "19:00–22:00",
+   "titulo": "Ética e Política",
+   "disciplinaId": "etica",
+   "ate": "2026-11-27",
+   "semAula": [
+    "2026-11-20"
+   ]
+  }
+ ]
+}
