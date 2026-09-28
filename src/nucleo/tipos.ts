@@ -20,6 +20,8 @@ export interface Leitura {
   prazo: Data
   minutos: number
   prioritaria?: boolean
+  // 'aula' = leitura rápida para a aula (sem tempo reservado); 'atividade' = seminário, debate, apresentação...
+  tipo?: 'aula' | 'atividade'
 }
 
 export type TipoEvento = 'prova' | 'entrega' | 'apresentacao' | 'pessoal'

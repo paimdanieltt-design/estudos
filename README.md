@@ -34,6 +34,7 @@ Outros comandos úteis:
 
 - `src/dados/fonte.ts` — os dados originais do semestre (disciplinas, leituras, provas e trabalhos), digitados a partir dos planos de ensino.
 - `src/dados/replanejamento.ts` — **seus ajustes**, aplicados por cima dos dados originais toda vez que o plano é gerado. Exemplos: remarcar uma prova, dar prioridade a uma leitura, mudar o tempo livre de um dia.
+- **Leituras de aula são rápidas**: não ganham tempo reservado nem geram atraso (ficam na aba Leituras com o selo ⚡). Só leituras de atividades (seminário, debate, apresentação) viram tarefas. Para dar tempo a uma leitura de aula, coloque o código dela em `leiturasComTempo` no `replanejamento.ts`.
 - `npm run plano` junta os dois e distribui as tarefas pelos dias respeitando o tempo de estudo (75 min em dia útil, 120 min no fim de semana) e os prazos.
 - O **plano é fixo** e o **progresso** (o que você marca) fica separado, guardado por chaves estáveis. Se o plano for gerado de novo, o que você já marcou continua valendo.
 

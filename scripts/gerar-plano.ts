@@ -74,22 +74,24 @@ const fila: Pedido[] = []
 const leituras = F.leituras
   .map((l) => ({ ...l, prazo: R.leiturasRemarcadas[l.id] ?? l.prazo, prioritaria: l.prioritaria || R.prioridadesLeitura.includes(l.id) || undefined }))
   .filter((l) => l.prazo > F.DIA_INICIAL_APP)
+  .map((l) => (R.leiturasComTempo.includes(l.id) ? { ...l, tipo: 'atividade' as const } : l))
+// Só leituras de atividade (seminário, debate...) viram tarefas com tempo reservado.
 const grupos = new Map<string, typeof leituras>()
-for (const l of leituras) {
+for (const l of leituras.filter((x) => x.tipo === 'atividade')) {
   const k = `${l.disciplinaId}|${l.prazo}`
   grupos.set(k, [...(grupos.get(k) ?? []), l])
 }
-const curto = (t: string) => /^([A-ZÀ-Ú][A-ZÀ-Ú;&' ]+)\./.exec(t)?.[1]?.trim() ?? t.slice(0, 45)
+const curto = (t: string) => t.replace(/\s*\(.*$/, '').replace(/\s+—.*$/, '').slice(0, 60)
 
 for (const [k, ls] of grupos) {
   const [d, prazo] = k.split('|')
   const min = ls.reduce((s, l) => s + l.minutos, 0)
-  const titulo = ls.length === 1 ? `Ler: ${ls[0].titulo}` : `Ler para a aula de ${fmtDiaMes(prazo)}: ${ls.map((l) => curto(l.titulo)).join(' + ')}`
+  const titulo = ls.length === 1 ? `Ler: ${ls[0].titulo}` : `Ler para a atividade de ${fmtDiaMes(prazo)}: ${ls.map((l) => curto(l.titulo)).join(' + ')}`
   fila.push({
     fim: somarDias(prazo, -1),
     colocar() {
       const dia = escolherDia(somarDias(prazo, -5), somarDias(prazo, -1), min)
-      adicionar({ id: `t-leit-${d}-${prazo}`, titulo, minutos: min, leituraIds: ls.map((l) => l.id), disciplinaId: d }, dia, `${disc(d).curto}: leituras da semana`, `leit-${d}`)
+      adicionar({ id: `t-leit-${d}-${prazo}`, titulo, minutos: min, leituraIds: ls.map((l) => l.id), disciplinaId: d }, dia, `${disc(d).curto}: leituras para atividades`, `leit-${d}`)
     },
   })
 }

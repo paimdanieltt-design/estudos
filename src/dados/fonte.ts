@@ -43,7 +43,11 @@ const L = (id: string, disciplinaId: string, prazo: string, minutos: number, tit
   id: `l-${id}`, disciplinaId, prazo, minutos, titulo, ...(prioritaria ? { prioritaria } : {}),
 })
 
-export const leituras: Leitura[] = [
+// Leituras ligadas a ATIVIDADES (seminário, debate, apresentação, atividade assíncrona) têm tempo reservado.
+// Todas as outras são leituras de aula: rápidas, sem tempo reservado e sem cobrança de atraso.
+const LEITURAS_DE_ATIVIDADE = new Set(['l-dpp-fraser1', 'l-dpp-fraser2', 'l-etica-foucault', 'l-mq-america'])
+
+const leiturasBrutas: Leitura[] = [
   // Ética e Política (sexta)
   L('etica-weber', 'etica', '2026-10-02', 60, 'WEBER. A política como vocação (penúltima e última parte)'),
   L('etica-arendt', 'etica', '2026-10-09', 90, 'ARENDT. O que é política? (cap. 1 a 3) e Sobre a violência (cap. 2)'),
@@ -100,6 +104,8 @@ export const leituras: Leitura[] = [
   L('hb-vainfas2', 'hb1', '2026-11-23', 60, 'VAINFAS (2014) Tempo dos Flamengos (p. 227-265)'),
   L('hb-honor', 'hb1', '2026-11-25', 45, 'HONOR (2019) Santa Teresa e os fundadores (iconologia da pintura)'),
 ]
+
+export const leituras: Leitura[] = leiturasBrutas.map((l) => ({ ...l, tipo: LEITURAS_DE_ATIVIDADE.has(l.id) ? 'atividade' : 'aula' }))
 
 // ---------------------------------------------------------------- EVENTOS
 const E = (id: string, disciplinaId: string | undefined, tipo: Evento['tipo'], data: string, titulo: string, extra: Partial<Evento> = {}): Evento => ({

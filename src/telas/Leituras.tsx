@@ -16,7 +16,8 @@ export function Leituras() {
   const totalFeitas = leituras.filter(feita).length
 
   const linha = (l: Leitura) => {
-    const atrasada = !feita(l) && l.prazo < hoje
+    const rapida = l.tipo === 'aula'
+    const atrasada = !feita(l) && !rapida && l.prazo < hoje // leitura rápida de aula não cobra atraso
     const ehNova = prog.leiturasNovas.some((x) => x.id === l.id)
     return (
       <li key={l.id} className={`flex gap-3 rounded-lg py-2.5 ${prio(l) ? 'bg-amber-50 px-2' : ''}`}>
@@ -25,7 +26,10 @@ export function Leituras() {
           <p className={`text-sm leading-snug ${feita(l) ? 'text-tinta-3 line-through' : ''}`}>{prio(l) && <span title="Leitura prioritária">⭐ </span>}{l.titulo}</p>
           <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-tinta-3">
             {modo === 'plano' && <Tag id={l.disciplinaId} />}
-            <span className={atrasada ? 'font-medium text-perigo' : ''}>Prazo: {fmtCurto(l.prazo)}</span>
+            {rapida
+              ? <span className="rounded-full bg-sky-50 px-2 py-0.5 font-medium text-sky-800" title="Leitura para a aula: sem tempo reservado no plano e sem cobrança de atraso">⚡ Rápida</span>
+              : <span className="rounded-full bg-orange-50 px-2 py-0.5 font-medium text-orange-800" title="Leitura de atividade: tem tempo reservado no plano">Atividade</span>}
+            <span className={atrasada ? 'font-medium text-perigo' : ''}>{rapida ? 'Aula' : 'Prazo'}: {fmtCurto(l.prazo)}</span>
             <span>{fmtMinutos(l.minutos)}</span>
             {feita(l) && <button className="font-medium text-destaque hover:underline" onClick={() => alternarLeitura(l.id)}>↺ Desmarcar</button>}
           </div>
@@ -50,7 +54,8 @@ export function Leituras() {
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h1 className="text-2xl font-bold">Leituras</h1>
-          <p className="text-sm text-tinta-2">{totalFeitas} de {leituras.length} leituras feitas. Marcar aqui marca também a tarefa da Rotina (e o contrário).</p>
+          <p className="text-sm text-tinta-2">{totalFeitas} de {leituras.length} leituras feitas. </p>
+          <p className="mt-1 text-xs text-tinta-3">⚡ <strong>Rápidas</strong> = leituras para a aula: sem tempo reservado e sem cobrança de atraso. <strong>Atividade</strong> = seminário, debate ou apresentação: entram na Rotina e marcar aqui marca a tarefa (e o contrário).</p>
         </div>
         <Botao variante="principal" onClick={() => setAberto(true)}>+ Adicionar leitura</Botao>
       </div>

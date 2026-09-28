@@ -74,7 +74,7 @@ export function Dashboard() {
 
       <Cartao className="viz">
         <Titulo>Porcentagem concluída por semana</Titulo>
-        <p className="mb-3 text-xs text-tinta-3">Tarefas (estudo, trabalhos, intercâmbio, TCC e extras) e leituras são contadas separadamente. Cada leitura conta uma vez.</p>
+        <p className="mb-3 text-xs text-tinta-3">Tarefas (trabalhos, intercâmbio, TCC, estudo para provas e extras) e leituras de atividades (seminários, debates, apresentações) são contadas separadamente. As leituras rápidas de aula ficam de fora.</p>
 
         {/* Legenda: sempre presente com 2 séries */}
         <div className="mb-3 flex flex-wrap gap-4 text-sm" aria-hidden={tabela}>
