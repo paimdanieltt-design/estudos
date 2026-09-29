@@ -73,11 +73,11 @@ const fila: Pedido[] = []
 // 3a) Leituras: uma tarefa por aula (disciplina + prazo)
 const leituras = F.leituras
   .map((l) => ({ ...l, prazo: R.leiturasRemarcadas[l.id] ?? l.prazo, prioritaria: l.prioritaria || R.prioridadesLeitura.includes(l.id) || undefined }))
-  .filter((l) => l.prazo > F.DIA_INICIAL_APP)
   .map((l) => (R.leiturasComTempo.includes(l.id) ? { ...l, tipo: 'atividade' as const } : l))
 // Só leituras de atividade (seminário, debate...) viram tarefas com tempo reservado.
 const grupos = new Map<string, typeof leituras>()
-for (const l of leituras.filter((x) => x.tipo === 'atividade')) {
+// Leituras anteriores ao dia inicial ficam só na aba Leituras (não viram tarefas).
+for (const l of leituras.filter((x) => x.tipo === 'atividade' && x.prazo > F.DIA_INICIAL_APP)) {
   const k = `${l.disciplinaId}|${l.prazo}`
   grupos.set(k, [...(grupos.get(k) ?? []), l])
 }

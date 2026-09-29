@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Notas } from '../componentes/Notas'
 import { Barra, Botao, Campo, Cartao, Checkbox, Janela, Tag, Titulo, estiloCampo } from '../componentes/basicos'
 import { useEstudos } from '../estado/Contexto'
-import { fmtCurto, fmtMinutos } from '../nucleo/datas'
+import { fmtCurto, fmtDiaMes, fmtMinutos } from '../nucleo/datas'
 import type { Leitura } from '../nucleo/tipos'
 
 export function Leituras() {
@@ -14,7 +14,22 @@ export function Leituras() {
   const feita = (l: Leitura) => !!prog.leiturasFeitas[l.id]
   const prio = (l: Leitura) => prog.prioritarias[l.id] ?? l.prioritaria ?? false
   const ordenar = (ls: Leitura[]) => [...ls].sort((a, b) => a.prazo.localeCompare(b.prazo))
-  const totalFeitas = leituras.filter(feita).length
+  // Leituras de antes do início do plano (até 28/09) ficam recolhidas, separadas das próximas.
+  const anterior = (l: Leitura) => l.prazo <= plano.diaInicialApp
+  const proximas = leituras.filter((l) => !anterior(l))
+  const anteriores = leituras.filter(anterior)
+  const totalFeitas = proximas.filter(feita).length
+
+  const blocoAnteriores = (ls: Leitura[]) => {
+    if (ls.length === 0) return null
+    return (
+      <details className="mt-3 border-t border-linha pt-3">
+        <summary className="cursor-pointer text-sm font-medium text-tinta-2">Leituras anteriores ({ls.filter(feita).length}/{ls.length} lidas)</summary>
+        <p className="mt-1 text-xs text-tinta-3">De aulas que já aconteceram. Ficam aqui para consulta e estudo; não geram tarefa nem atraso.</p>
+        <ul className="divide-y divide-linha">{ordenar(ls).map((l) => linha(l))}</ul>
+      </details>
+    )
+  }
 
   const linha = (l: Leitura) => {
     const rapida = l.tipo === 'aula'
@@ -56,7 +71,7 @@ export function Leituras() {
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h1 className="text-2xl font-bold">Leituras</h1>
-          <p className="text-sm text-tinta-2">{totalFeitas} de {leituras.length} leituras feitas. </p>
+          <p className="text-sm text-tinta-2">{totalFeitas} de {proximas.length} leituras a partir de {fmtDiaMes(plano.diaInicialApp)} feitas ({anteriores.length} anteriores ficam recolhidas). </p>
           <p className="mt-1 text-xs text-tinta-3">⚡ <strong>Rápidas</strong> = leituras para a aula: sem tempo reservado e sem cobrança de atraso. <strong>Atividade</strong> = seminário, debate ou apresentação: entram na Rotina e marcar aqui marca a tarefa (e o contrário).</p>
         </div>
         <Botao variante="principal" onClick={() => setAberto(true)}>+ Adicionar leitura</Botao>
@@ -67,18 +82,25 @@ export function Leituras() {
       </div>
 
       {modo === 'plano' ? (
-        <Cartao><ul className="divide-y divide-linha">{ordenar(leituras).map(linha)}</ul></Cartao>
+        <Cartao>
+          <ul className="divide-y divide-linha">{ordenar(proximas).map((l) => linha(l))}</ul>
+          {blocoAnteriores(anteriores)}
+        </Cartao>
       ) : (
         <div className="grid gap-4 lg:grid-cols-2">
           {plano.disciplinas.map((d) => {
-            const ls = ordenar(leituras.filter((l) => l.disciplinaId === d.id))
-            if (ls.length === 0) return null
+            const doDisc = leituras.filter((l) => l.disciplinaId === d.id)
+            if (doDisc.length === 0) return null
+            const ls = ordenar(doDisc.filter((l) => !anterior(l)))
+            const antes = doDisc.filter(anterior)
             const n = ls.filter(feita).length
             return (
               <Cartao key={d.id}>
                 <Titulo direita={<span className="text-sm text-tinta-2">{n}/{ls.length}</span>}><span className="mr-2">{d.nome}</span></Titulo>
-                <Barra valor={(n / ls.length) * 100} className="mb-2" />
-                <ul className="divide-y divide-linha">{ls.map(linha)}</ul>
+                <Barra valor={ls.length ? (n / ls.length) * 100 : 0} className="mb-2" />
+                {ls.length === 0 && <p className="py-2 text-sm text-tinta-2">Sem leituras pela frente.</p>}
+                <ul className="divide-y divide-linha">{ls.map((l) => linha(l))}</ul>
+                {blocoAnteriores(antes)}
               </Cartao>
             )
           })}

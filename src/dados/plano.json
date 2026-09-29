@@ -491,6 +491,318 @@
    "minutos": 45,
    "titulo": "HONOR (2019) Santa Teresa e os fundadores (iconologia da pintura)",
    "tipo": "aula"
+  },
+  {
+   "id": "l-etica-bobbio",
+   "disciplinaId": "etica",
+   "prazo": "2026-08-21",
+   "minutos": 30,
+   "titulo": "BOBBIO. Ética e política (Lua Nova, n. 25, p. 131-140)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-etica-aristoteles",
+   "disciplinaId": "etica",
+   "prazo": "2026-08-28",
+   "minutos": 90,
+   "titulo": "ARISTÓTELES. Ética a Nicômaco (Livro II; Livro X, caps. VI a IX) e A política (Livros III, VI e VII, trechos)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-etica-maquiavel",
+   "disciplinaId": "etica",
+   "prazo": "2026-09-04",
+   "minutos": 75,
+   "titulo": "MAQUIAVEL. O príncipe (caps. 1 a 6; 8 a 10; 14 a 18; 21 e 22)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-etica-kant",
+   "disciplinaId": "etica",
+   "prazo": "2026-09-11",
+   "minutos": 30,
+   "titulo": "KANT. Resposta à pergunta: Que é esclarecimento?",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-etica-montesquieu",
+   "disciplinaId": "etica",
+   "prazo": "2026-09-18",
+   "minutos": 45,
+   "titulo": "MONTESQUIEU. O espírito das leis, Livro VIII — Da corrupção dos princípios dos governos",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-etica-mill",
+   "disciplinaId": "etica",
+   "prazo": "2026-09-25",
+   "minutos": 75,
+   "titulo": "STUART MILL. O Utilitarismo (caps. I, II e III)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-benevides",
+   "disciplinaId": "dpp",
+   "prazo": "2026-08-18",
+   "minutos": 45,
+   "titulo": "BENEVIDES. Democracia: conceitos (TSE, Diretrizes nacionais para ações de cidadania das EJEs)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-santos",
+   "disciplinaId": "dpp",
+   "prazo": "2026-08-18",
+   "minutos": 60,
+   "titulo": "SANTOS; AVRITZER. Introdução: para ampliar o cânone democrático (p. 39-82)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-ingram",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-08",
+   "minutos": 45,
+   "titulo": "INGRAM; DELEON; SCHNEIDER. Public policy theory and democracy: the elephant in the corner (p. 175-200) — em inglês",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-pogrebinschi",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-08",
+   "minutos": 30,
+   "titulo": "POGREBINSCHI. A democracia do homem comum: resgatando a teoria política de John Dewey",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-dewey",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-08",
+   "minutos": 30,
+   "titulo": "DEWEY. O público e seus problemas (excertos)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-cefai",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-10",
+   "minutos": 45,
+   "titulo": "CEFAÏ. Públicos, problemas públicos, arenas públicas… (Novos Estudos Cebrap, 2017)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-andion",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-10",
+   "minutos": 45,
+   "titulo": "ANDION; MAGALHÃES. (Re)aproximando os pragmatismos da análise das políticas públicas",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-stone",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-10",
+   "minutos": 20,
+   "titulo": "VAN OSTAIJEN; JHAGROE. \"Get those voices at the table!\": entrevista com Deborah Stone — em inglês",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-telles",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-15",
+   "minutos": 30,
+   "titulo": "TELLES. Direitos sociais: afinal do que se trata?",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-dpp-daroit",
+   "disciplinaId": "dpp",
+   "prazo": "2026-09-15",
+   "minutos": 30,
+   "titulo": "DAROIT et al. Gestão pública, democracia e direitos aos 30 anos da Constituição Federal",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-mq-c1",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-08-13",
+   "minutos": 60,
+   "titulo": "Gravetter & Wallnau, cap. 1 — Introdução à análise quantitativa e mensuração",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-mq-c2",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-08-18",
+   "minutos": 60,
+   "titulo": "Gravetter & Wallnau, cap. 2 (exceto seção 2.5) — Distribuições de frequência",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-mq-c3",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-08-20",
+   "minutos": 60,
+   "titulo": "Gravetter & Wallnau, cap. 3 — Medidas de tendência central",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-mq-c4",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-08-25",
+   "minutos": 60,
+   "titulo": "Gravetter & Wallnau, cap. 4 — Variabilidade",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-mq-c6",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-09-08",
+   "minutos": 75,
+   "titulo": "Gravetter & Wallnau, cap. 6 (exceto seção 6.4) — Probabilidade",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-mq-c7",
+   "disciplinaId": "mqapp",
+   "prazo": "2026-09-10",
+   "minutos": 60,
+   "titulo": "Gravetter & Wallnau, cap. 7 — Probabilidade e amostras",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-lindblom",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-08-24",
+   "minutos": 20,
+   "titulo": "LINDBLOM (1981) cap. 1 — A decisão política (p. 7-12)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-muller1",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-08-26",
+   "minutos": 45,
+   "titulo": "MULLER; SUREL (2002) p. 99-119 — Tomada de decisão",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-rosa66",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-08-26",
+   "minutos": 20,
+   "titulo": "ROSA et al. (2021) p. 66-72",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-pereira",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-08-31",
+   "minutos": 45,
+   "titulo": "PEREIRA et al. (2010) p. 1-10 — Modelos de tomada de decisão sob o enfoque cognitivo",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-guimaraes",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-08-31",
+   "minutos": 60,
+   "titulo": "GUIMARÃES; ANDION (2021) p. 513-543 — Pragmatismos e análise de políticas públicas",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-capella1",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-09-14",
+   "minutos": 30,
+   "titulo": "CAPELLA (2018) p. 13-28 — Problema público",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-muller2",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-09-16",
+   "minutos": 30,
+   "titulo": "MULLER; SUREL (2002) p. 56-64",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-pd-capella28",
+   "disciplinaId": "pdpp",
+   "prazo": "2026-09-28",
+   "minutos": 75,
+   "titulo": "CAPELLA (2018) p. 28-69 e ROSA et al. (2021) p. 48-51 — Agenda (Atividade 7)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-hooks",
+   "disciplinaId": "hb1",
+   "prazo": "2026-08-12",
+   "minutos": 60,
+   "titulo": "HOOKS. Ensinando a transgredir (p. 173-222)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-gonzalez",
+   "disciplinaId": "hb1",
+   "prazo": "2026-08-12",
+   "minutos": 45,
+   "titulo": "GONZALEZ. Racismo e sexismo na cultura brasileira (texto extra)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-guidon",
+   "disciplinaId": "hb1",
+   "prazo": "2026-08-19",
+   "minutos": 30,
+   "titulo": "GUIDON. As ocupações pré-históricas do Brasil (p. 37-52)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-gaspar",
+   "disciplinaId": "hb1",
+   "prazo": "2026-08-24",
+   "minutos": 45,
+   "titulo": "GASPAR. A arte rupestre no Brasil",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-fausto",
+   "disciplinaId": "hb1",
+   "prazo": "2026-08-26",
+   "minutos": 30,
+   "titulo": "FAUSTO. Fragmentos de cultura Tupinambá (p. 381-396)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-almeida1",
+   "disciplinaId": "hb1",
+   "prazo": "2026-08-31",
+   "minutos": 60,
+   "titulo": "ALMEIDA. Catequese, aldeamento e missionização (p. 435-478)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-almeida2",
+   "disciplinaId": "hb1",
+   "prazo": "2026-09-02",
+   "minutos": 45,
+   "titulo": "ALMEIDA. Os índios na História do Brasil (p. 107-133)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-schwartz",
+   "disciplinaId": "hb1",
+   "prazo": "2026-09-16",
+   "minutos": 45,
+   "titulo": "SCHWARTZ. A economia do Império português (p. 21-51)",
+   "tipo": "aula"
+  },
+  {
+   "id": "l-hb-fragoso",
+   "disciplinaId": "hb1",
+   "prazo": "2026-09-28",
+   "minutos": 60,
+   "titulo": "FRAGOSO; GUEDES; KRAUSE. A América portuguesa e os sistemas atlânticos na Época Moderna (p. 11-69)",
+   "tipo": "aula"
   }
  ],
  "eventos": [

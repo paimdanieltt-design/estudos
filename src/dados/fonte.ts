@@ -103,6 +103,51 @@ const leiturasBrutas: Leitura[] = [
   L('hb-franco', 'hb1', '2026-11-18', 45, 'FRANCO (2016) Discriminação e abandono de recém-nascidos mestiços'),
   L('hb-vainfas2', 'hb1', '2026-11-23', 60, 'VAINFAS (2014) Tempo dos Flamengos (p. 227-265)'),
   L('hb-honor', 'hb1', '2026-11-25', 45, 'HONOR (2019) Santa Teresa e os fundadores (iconologia da pintura)'),
+  // ---- Leituras de aulas anteriores ao plano (só aparecem na aba Leituras; sem tarefas e sem atraso)
+  // Ética e Política
+  L('etica-bobbio', 'etica', '2026-08-21', 30, 'BOBBIO. Ética e política (Lua Nova, n. 25, p. 131-140)'),
+  L('etica-aristoteles', 'etica', '2026-08-28', 90, 'ARISTÓTELES. Ética a Nicômaco (Livro II; Livro X, caps. VI a IX) e A política (Livros III, VI e VII, trechos)'),
+  L('etica-maquiavel', 'etica', '2026-09-04', 75, 'MAQUIAVEL. O príncipe (caps. 1 a 6; 8 a 10; 14 a 18; 21 e 22)'),
+  L('etica-kant', 'etica', '2026-09-11', 30, 'KANT. Resposta à pergunta: Que é esclarecimento?'),
+  L('etica-montesquieu', 'etica', '2026-09-18', 45, 'MONTESQUIEU. O espírito das leis, Livro VIII — Da corrupção dos princípios dos governos'),
+  L('etica-mill', 'etica', '2026-09-25', 75, 'STUART MILL. O Utilitarismo (caps. I, II e III)'),
+  // Democracia e Políticas Públicas
+  L('dpp-benevides', 'dpp', '2026-08-18', 45, 'BENEVIDES. Democracia: conceitos (TSE, Diretrizes nacionais para ações de cidadania das EJEs)'),
+  L('dpp-santos', 'dpp', '2026-08-18', 60, 'SANTOS; AVRITZER. Introdução: para ampliar o cânone democrático (p. 39-82)'),
+  L('dpp-ingram', 'dpp', '2026-09-08', 45, 'INGRAM; DELEON; SCHNEIDER. Public policy theory and democracy: the elephant in the corner (p. 175-200) — em inglês'),
+  L('dpp-pogrebinschi', 'dpp', '2026-09-08', 30, 'POGREBINSCHI. A democracia do homem comum: resgatando a teoria política de John Dewey'),
+  L('dpp-dewey', 'dpp', '2026-09-08', 30, 'DEWEY. O público e seus problemas (excertos)'),
+  L('dpp-cefai', 'dpp', '2026-09-10', 45, 'CEFAÏ. Públicos, problemas públicos, arenas públicas… (Novos Estudos Cebrap, 2017)'),
+  L('dpp-andion', 'dpp', '2026-09-10', 45, 'ANDION; MAGALHÃES. (Re)aproximando os pragmatismos da análise das políticas públicas'),
+  L('dpp-stone', 'dpp', '2026-09-10', 20, 'VAN OSTAIJEN; JHAGROE. "Get those voices at the table!": entrevista com Deborah Stone — em inglês'),
+  L('dpp-telles', 'dpp', '2026-09-15', 30, 'TELLES. Direitos sociais: afinal do que se trata?'),
+  L('dpp-daroit', 'dpp', '2026-09-15', 30, 'DAROIT et al. Gestão pública, democracia e direitos aos 30 anos da Constituição Federal'),
+  // Métodos Quantitativos (Gravetter & Wallnau)
+  L('mq-c1', 'mqapp', '2026-08-13', 60, 'Gravetter & Wallnau, cap. 1 — Introdução à análise quantitativa e mensuração'),
+  L('mq-c2', 'mqapp', '2026-08-18', 60, 'Gravetter & Wallnau, cap. 2 (exceto seção 2.5) — Distribuições de frequência'),
+  L('mq-c3', 'mqapp', '2026-08-20', 60, 'Gravetter & Wallnau, cap. 3 — Medidas de tendência central'),
+  L('mq-c4', 'mqapp', '2026-08-25', 60, 'Gravetter & Wallnau, cap. 4 — Variabilidade'),
+  L('mq-c6', 'mqapp', '2026-09-08', 75, 'Gravetter & Wallnau, cap. 6 (exceto seção 6.4) — Probabilidade'),
+  L('mq-c7', 'mqapp', '2026-09-10', 60, 'Gravetter & Wallnau, cap. 7 — Probabilidade e amostras'),
+  // Processo Decisório
+  L('pd-lindblom', 'pdpp', '2026-08-24', 20, 'LINDBLOM (1981) cap. 1 — A decisão política (p. 7-12)'),
+  L('pd-muller1', 'pdpp', '2026-08-26', 45, 'MULLER; SUREL (2002) p. 99-119 — Tomada de decisão'),
+  L('pd-rosa66', 'pdpp', '2026-08-26', 20, 'ROSA et al. (2021) p. 66-72'),
+  L('pd-pereira', 'pdpp', '2026-08-31', 45, 'PEREIRA et al. (2010) p. 1-10 — Modelos de tomada de decisão sob o enfoque cognitivo'),
+  L('pd-guimaraes', 'pdpp', '2026-08-31', 60, 'GUIMARÃES; ANDION (2021) p. 513-543 — Pragmatismos e análise de políticas públicas'),
+  L('pd-capella1', 'pdpp', '2026-09-14', 30, 'CAPELLA (2018) p. 13-28 — Problema público'),
+  L('pd-muller2', 'pdpp', '2026-09-16', 30, 'MULLER; SUREL (2002) p. 56-64'),
+  L('pd-capella28', 'pdpp', '2026-09-28', 75, 'CAPELLA (2018) p. 28-69 e ROSA et al. (2021) p. 48-51 — Agenda (Atividade 7)'),
+  // História do Brasil 1
+  L('hb-hooks', 'hb1', '2026-08-12', 60, 'HOOKS. Ensinando a transgredir (p. 173-222)'),
+  L('hb-gonzalez', 'hb1', '2026-08-12', 45, 'GONZALEZ. Racismo e sexismo na cultura brasileira (texto extra)'),
+  L('hb-guidon', 'hb1', '2026-08-19', 30, 'GUIDON. As ocupações pré-históricas do Brasil (p. 37-52)'),
+  L('hb-gaspar', 'hb1', '2026-08-24', 45, 'GASPAR. A arte rupestre no Brasil'),
+  L('hb-fausto', 'hb1', '2026-08-26', 30, 'FAUSTO. Fragmentos de cultura Tupinambá (p. 381-396)'),
+  L('hb-almeida1', 'hb1', '2026-08-31', 60, 'ALMEIDA. Catequese, aldeamento e missionização (p. 435-478)'),
+  L('hb-almeida2', 'hb1', '2026-09-02', 45, 'ALMEIDA. Os índios na História do Brasil (p. 107-133)'),
+  L('hb-schwartz', 'hb1', '2026-09-16', 45, 'SCHWARTZ. A economia do Império português (p. 21-51)'),
+  L('hb-fragoso', 'hb1', '2026-09-28', 60, 'FRAGOSO; GUEDES; KRAUSE. A América portuguesa e os sistemas atlânticos na Época Moderna (p. 11-69)'),
 ]
 
 export const leituras: Leitura[] = leiturasBrutas.map((l) => ({ ...l, tipo: LEITURAS_DE_ATIVIDADE.has(l.id) ? 'atividade' : 'aula' }))
